@@ -1,1 +1,2 @@
-# okaymon-webpages
+WIP
+(Readme for Okaymon webpage assets)
