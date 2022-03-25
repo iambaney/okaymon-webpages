@@ -1,2 +1,2 @@
 # Drive sync files
-*.ini
+**/desktop.ini
