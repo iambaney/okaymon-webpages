@@ -1,0 +1,62 @@
+One benefit of writing that proposal to Zeneca, whether he actually does anything with it or not, is it gave me more practice pitching the project and I managed to describe the game rules in half the length of the initial version that's on Medium. I just wrote a version that's even more terse.
+[
+2:44 AM
+]
+I have a basic idea for the structure of the website. One page, with links that go to different sections, standard NFT project page structure. The sections are Intro Art Gamified Drop Roadmap Team
+[
+2:44 AM
+]
+Gamified drop is the longest
+[
+2:44 AM
+]
+This is what I have so far
+[
+2:45 AM
+]
+INTRO Welcome! Okaymon is a collection of up to 10,000 AI-generated creatures living on the Ethereum blockchain. Why "up to 10,000?" The final size of the collection is determined by the choices you make in our unique gamified drop. The rarity of traits is also shaped by your choices. Okaymon are awarded points and we will give 10% of our earnings back to over 100 winning Okaymon as ETH prizes! (edited)
+[
+2:45 AM
+]
+ART Okaymon are created by AI. Specifically we trained customized versions of StyleGAN3 and ruDALL-E on a hand-curated dataset of over 8,000 images of Pokemon, and the result is one of the cleanest AI collections ever made. None of them are drawn or designed by people; they're 100% machine dream! animated contact sheet of growing Okaymon embryos (edited)
+[
+2:47 AM
+]
+GAMIFIED DROP For full details see our white paper (link). Okayballs Okayballs cost .05 ETH, and they are minting passes which can be exchanged at any time for an Okaymon NFT. You use your Okayballs to "catch" Okaymon. 5 Generations The collection drops across five Generations. Each Gen consists of 2,000 Okayballs and 2,000 Okaymon. Each Generation has a theme. The first is called Okaymon Oasis. Subsequent themes will be revealed immediately before their Gen's release. Okayball Rules Gen 1 Okayballs are the strongest. They function like a Master Ball in that they are guaranteed to catch any Okaymon from any Generation. You can use your Gen 1 ball to catch a Gen 1 Okaymon, or hold onto it to catch an Okaymon from a later Gen. Each Generation of Okayball gets progressively weaker. A single Gen 2 ball can catch a Gen 2 'mon or any later Generation of Okaymon, but cannot catch a Gen 1 Okaymon. However, two Gen 2 Okayballs used together can catch "backward" into Gen 1. As a rule, it costs an extra Okayball for every Generation backward you want to catch. Dynamic Trait Rarity One result of the Okayball rules is that whenever an Okayball is used outside its proper Gen (e.g., a Gen 1 ball is used to catch a Gen 2 Okaymon instead of a Gen 1 Okaymon), the total possible size of the collection is decreased. (See here[link] for more details.) This also creates rarity, as certain Okaymon traits will appear less often as the possible collection size shrinks. Points, Winners, Prizes Okaymon are awarded points based on the rarity of their traits. Game strategy involves predicting which traits will end up being most valuable once the collection drop ends. Full prize structure is described here(link). At the end of Gen 5, the wallet holding the highest scoring Okaymon wins a prize of 2% of our earnings, which, assuming all Okayballs sell, is 10 ETH plus a cut of royalties. Smaller prizes will go to over 100 other winners. (edited)
+
+Also, here are some sample bios. Please edit to your liking.
+[
+10:50 PM
+]
+Arturo is an artist, actor, director, and filmmaker from Rome, Italy. He travelled across Europe as tour manager and director of his own theater company, collaborated with many prominent artists, and performed under controversial director Romeo Castellucci. After coming to the US, he has directed plays in Portland, OR and worked for years as artist-in-residence at an art school. He was Artistic Director for a 3D sound installation at Google Play's Annual Developer Conference in 2017. Anthony is an AI artist and electronic musician. He's a certified Pokemaniac, and was a competitive-tier battler in the Pokemon Video Game Championships 2014-2018. He studied computer science and digital art. When he's not preoccupied training The Okay Computer to generate the Okaymon you know and love, he makes wedding cakes for fun. Nathan is a mathematician, filmmaker, and writer. He studied for years with novelist Chuck Palahniuk in a highly competitive writing workshop, and edited books for Unsolicited Press. He and Arturo have made several short films. Nathan taught math before working full-time on Okaymon.
+@NFTchee
+10% of our earnings will be reserved as prizes in a separate public wallet through the end of the Gen 5 release. Prizes will be ETH or the ETH-equivalent in NFTs of your choice. Prizes are percentages of our earnings. We will also include special 1/1 Okaymon NFTs and physical prizes. There will be over 100 winning Okaymon, and the wallets that hold them can claim their rewards. (edited)
+
+tartz
+—
+03/07/2022
+I liked the info, just reorganized it a bit. What do you think of this? 10% of the project’s earnings will be reserved as prizes to holders of Okaymon in the form of ETH or the ETH-equivalent in NFTs of your choice. At the end of our final Gen 5 release, there will be over 100 winning Okaymon: - The Top Prize will be 2% of our earnings and goes to the top-scoring Okaymon - The Okayest Okaymon will receive 1% of earnings and will go to the Okaymon with the median score - The other prize will be 5% of earnings and will be divided evenly among the 50 Okaymon with the highest scores and 50 Okaymon with the median scores Prior to the drop of each new generation, there will be a 24 hour pause. During this period, the top-scoring Okaymon will be awarded 1% of earnings up to that point. There will be 4 Intermediate Prizes. We will also be including special 1/1 Okaymon NFTs and physical prizes throughout the project.
+
+NFTchee
+—
+03/07/2022
+Love it!
+
+tartz
+—
+03/07/2022
+Those bios sound impressive! Here's mine, I'm welcome to feedback Tartz has nearly 10 years of experience as a residency-trained optometrist specializing in management of ocular diseases and acute trauma. He also co-manages cataract and refractive surgeries and is certified in specialty contact lens fittings. He has a passion for education and loves giving back to the College of Optometry as an adjunct clinical instructor. Tartz began his journey into NFTs when he first heard about them on Gary V’s podcast circa February 2021. His first ever NFT purchase was an NBA TopShot pack and he’s been an early member of communities like BAYC, World of Women, Ghxsts and Ether Orcs.
+[
+11:44 PM
+]
+also shabla has reached out and wants more details on the WL giveaway
+[
+11:45 PM
+]
+wants to have a wl template and spots we're giving out
+[
+11:45 PM
+]
+i've seen many wl promos so i can work on that. how many spots should we give? i wanna say between 20-50
+March 8, 2022
+
