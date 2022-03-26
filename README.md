@@ -1,8 +1,12 @@
-Web Mockup Banner and Behavior:
-<img src="https://github.com/iambaney/okaymon-webpages/blob/main/Landing%20Page%20Assets/%23_Web%20Mockup_banner%20and%20behavior.jpg">
+## 1. Landing Page Mockup
+**Banner and Behavior:**
+![Banner and behavior](./Landing%20Page%20Assets/%23_Web%20Mockup_banner%20and%20behavior.jpg)
 
-Web Mockup:
-<img src="https://github.com/iambaney/okaymon-webpages/blob/main/Landing%20Page%20Assets/%23_Web%20Mockup.jpg">
+**Landing Page Mockup:**
+![Landing page mockup](./Landing%20Page%20Assets/%23_Web%20Mockup.jpg)
 
-Web Mockup Font Colors:
-<img src="https://github.com/iambaney/okaymon-webpages/blob/main/Landing%20Page%20Assets/%23_Web%20Mockup_fonts%20colors.jpg">
+**Fonts and Colors:**
+![Fonts and colors](./Landing%20Page%20Assets/%23_Web%20Mockup_fonts%20colors.jpg)
+
+## 2. Leaderboard Page Mockup
+(To be built)
