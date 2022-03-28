@@ -1,2 +1,5 @@
 # Drive sync files
 **/desktop.ini
+
+# Deprecated Files
+**/archive/**
