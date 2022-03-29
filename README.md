@@ -2,6 +2,7 @@
 **Layout, top:**
 ![Layout guide 1](./Leaderboard%20Assets/%23leaderboard%20layout_guide%201.jpg)
 * Current background image is a placeholder. Final BG image in development
+* Mint button has a lightly desaturated seperate image to be used as a mouse hover state.
 
 **Layout, bottom:**
 ![Layout guide 2](./Leaderboard%20Assets/%23leaderboard%20layout_guide%202.jpg)
