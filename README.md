@@ -20,7 +20,7 @@
 **Web3 and dynamic data, bottom:**
 ![Web3 and dynamic data 2](./Leaderboard%20Assets/%23leaderboard_data_guide_2.jpg)
 * If possible, the order of contents in the tables should be sorted by point value and then re-sorted after after each mint when point value is recalculated.
-* If this is not possible or is prohibitively difficult, list Gens in numerical order and leave the rest of the trait table data ordered as shown.
+* If this is not possible or is prohibitively time-consuming, list Gens as static in numerical order and leave the rest of the trait table data static and ordered as shown.
 
 ## Landing Page Mockup
 **Banner and Behavior:**
