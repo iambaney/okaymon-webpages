@@ -47,7 +47,7 @@ main {
 }
 
 .content {
-    overflow-y: scroll;
+    overflow-y: hidden;
     flex: 1;
 }
 
@@ -81,7 +81,7 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
+    overflow-y: hidden;
     align-items: center;
 }
 
@@ -189,6 +189,16 @@ main {
     color: rgb(61, 59, 52);
 }
 
+.table-contents {
+    width: 70%;
+    border: 1px solid;
+    border: 2px;
+    text-align: left;
+    font-family: pixelate;
+    font-size: 1.2em;
+    color: rgb(61, 59, 52);
+}
+
 .bold-red {
     color: rgb(255, 68, 68);
     font-family: opensans-condensed-bold;
@@ -229,11 +239,11 @@ main {
         font-size: 3em;
     }
 }
-
-@media (min-width: 1600px) {
+/*Threshold for destop switch to mobile*/
+@media (min-width: 1400px) {
     ::-webkit-scrollbar {
-        width: 0;
-        background: transparent;
+        width: 10;
+        /*background:rgb(255, 255, 255);A*/
     }
 
     .banner-container-mobile {
@@ -258,6 +268,9 @@ main {
         z-index: 100;
         overflow: hidden;
         margin: auto;
+        border: 0px solid transparent;
+        padding: 0px;
+     /*   border-image: url("../media/pixelborders.png") 25% round;*/
     }
 
     #banner-desktop {
@@ -277,9 +290,9 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0 20px;
+        margin: 0 10px;
         width: 100%;
-        overflow-y: scroll;
+        overflow-y: auto;
     }
     
     .left-sidebar, .right-sidebar {
@@ -292,7 +305,7 @@ main {
         background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content:top;
     }
     
     .right-sidebar {
@@ -392,20 +405,22 @@ main {
     }
     
     .section-body h1 {
-        width: 60%;
+        width: 70%;
         color: rgb(61, 59, 52);
         font-size: 2.8em;
         font-family: pixelate;
         letter-spacing: normal;
         border-top: 3px solid rgb(61, 59, 52);
     }
-    
+
+/*Story section body. tr hack*/
+
     .section-body p {
         text-align: center;
-        width: 60%;
+        width: 90%;
         font-family: opensans-condensed-regular;
         font-size: 1.4em;
-        margin-top: 40px;
+        margin-top: 20px;
         color: rgb(61, 59, 52);
     }
     
