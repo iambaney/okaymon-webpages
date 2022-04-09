@@ -200,6 +200,7 @@ main {
     justify-content: center;
     border-spacing: 15px;
 }
+
 /*todo: make a specific one for roadmap table*/
 
 .bold-red {
@@ -458,7 +459,7 @@ main {
         justify-content: center;
         align-items: center;
         font-family: opensans-condensed-regular;
-        font-size: 1.5em;
+        font-size: 1.6em;
         color: rgb(255, 247, 211);
         background-repeat: no-repeat;
     }
