@@ -190,14 +190,15 @@ main {
 }
 
 .table-contents {
-    width: 90%;
-    border:none;
-    text-align: left;
+    width: 80%;
+    border:0px solid;
+    border-top: 1px solid;
+    text-align:left;
     font-family: opensans-condensed-regular;
     font-size: 1.4em;
     color: rgb(61, 59, 52);
     justify-content: center;
-    border-spacing: 20px;
+    border-spacing: 15px;
 }
 /*todo: make a specific one for roadmap table*/
 
@@ -321,7 +322,6 @@ main {
     }
 
     /*added by Antho*/
-    .
     .socials {
         display: flex;
         justify-content: center;
@@ -334,7 +334,7 @@ main {
     
     .section {
         width: 100%;
-        height: 200%;
+        /*height: 250%; /*paramater to fix section stacking*/
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -432,11 +432,23 @@ main {
         color: rgb(61, 59, 52);
     }
     
+    .btn-img {
+        border: none;
+        cursor:pointer;
+        background-color: transparent;
+      }
+      
+    .btn-img:hover img {
+        opacity: 0.8;
+        position: relative;
+        transform: scale(1.02)
+      }
+
     .bold-red {
         color: rgb(255, 68, 68);
         font-family: opensans-condensed-bold;
     }
-    
+
     .tab {
         cursor: pointer;
         height: 125px;
