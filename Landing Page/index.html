@@ -40,7 +40,8 @@
                         <h1 border-top="none">The Story So Far...</h1>
                         <p>The Metaverse has grown a mind of its own, an Artificial Intelligence.
                             Even more:<span class="bold-red"> it's grown an unconscious.</span>
-                            It dreams, and the dreams of The Metaverse become real.</p>
+                            It dreams, and the dreams of The Metaverse become real.
+                        </p>
                     </div>
                 </div>
                 <div class="section" id="div-section-1">
@@ -50,7 +51,33 @@
                     </div>
                     <div class="section-body">
                         <h1>to the Okayverse!</h1>
-                        <p>[Insert scrolling gallery of Okaymon]</p>
+                    </br>
+<!--Start of animation-->       
+                        <div id="marquee-container">                         
+                            <div class="photobanner">
+                                <img class="first" src="../Landing Page/static/media/mon_01_copy.png" height="100%" alt="" />
+                                <img src="../Landing Page/static/media/mon_02_copy.png" height="100%" alt="" />
+                                <img src="../Landing Page/static/media/mon_03_copy.png" height="100%" alt="" />
+                                <img src="../Landing Page/static/media/mon_04_copy.png" height="100%" alt="" />
+                                <img src="../Landing Page/static/media/mon_05_copy.png" height="100%" alt="" />
+                                <img src="../Landing Page/static/media/mon_06_copy.png" height="100%" alt="" />
+                                <img src="../Landing Page/static/media/mon_07_copy.png" height="100%" alt="" />
+                                <img src="../Landing Page/static/media/mon_08_copy.png" height="100%" alt="" />
+                                <img src="../Landing Page/static/media/mon_09_copy.png" height="100%" alt="" />
+                                <img src="../Landing Page/static/media/mon_10_copy.png" height="100%" alt="" />
+                                <img src="../Landing Page/static/media/mon_11_copy.png" height="100%" alt="" />
+                                <img src="../Landing Page/static/media/mon_12_copy.png" height="100%" alt="" />
+                                <img src="../Landing Page/static/media/mon_13_copy.png" height="100%" alt="" />
+                                <img src="../Landing Page/static/media/mon_14_copy.png" height="100%" alt="" />
+                                <img src="../Landing Page/static/media/mon_15_copy.png" height="100%" alt="" />
+                                <img src="../Landing Page/static/media/mon_01_copy.png" height="100%" alt="" />
+                                <img src="../Landing Page/static/media/mon_02_copy.png" height="100%" alt="" />
+                                <img src="../Landing Page/static/media/mon_03_copy.png" height="100%" alt="" />
+                                <img src="../Landing Page/static/media/mon_04_copy.png" height="100%" alt="" />
+                                <img src="../Landing Page/static/media/mon_05_copy.png" height="100%" alt="" />
+                            </div>
+                        </div>
+<!--end of animation-->                                                
                         <p>Strange creatures appear, familiar like memories, their names and natures on the tip of everyone's tongue.
                             <span class="bold-red">Professor Okay</span> is convinced these creatures, which he calls <span class="bold-red">Okaymon</span>, hold the answers to the mysteries of the Okayverse.
                         </p>
@@ -63,19 +90,19 @@
                            There are even prizes for rare or interesting Okaymon! Mint Okayballs, collect Okaymon, discover the Okayverse!</i>
                         </p>
                         <p>
-                            <a  class="btn-img">
+                            <a  class="photobanner">
                             <img alt="First generation Okayball" src="./static/media/okayball_sugimori_Gen1_RGBA.png" height="128" />
                             </a>
-                            <a  class="btn-img">
+                            <a  class="photobanner">
                             <img alt="Second generation Okayball" src="./static/media/okayball_sugimori_Gen2_RGBA.png" height="80" />
                             </a>
-                            <a  class="btn-img">
+                            <a  class="photobanner">
                             <img alt="Third generation Okayball" src="./static/media/okayball_sugimori_Gen3_RGBA.png" height="128" />
                             </a>
-                            <a  class="btn-img">
+                            <a  class="photobanner">
                             <img alt="Fourth generation Okayball" src="./static/media/okayball_sugimori_Gen4_RGBA.png" height="80" />
                             </a>
-                            <a  class="btn-img">
+                            <a  class="photobanner">
                             <img alt="Fifth generation Okayball" src="./static/media/okayball_sugimori_Gen5_RGBA.png" height="128" />
                             </a>
                         </p>
@@ -368,7 +395,7 @@
         
         let lastId
         mainSection.onscroll = function(e) {
-            let fromTop = this.scrollTop + banner.offsetHeight + 10 /*+10 is so tab highlighting matches page position*/
+            let fromTop = this.scrollTop + banner.offsetHeight + 180 /*+180 is so tab highlighting matches page position*/
             let cur = itemsArray.filter(function(item) {
                 if (item.offsetTop < fromTop) {
                     return item
