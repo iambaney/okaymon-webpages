@@ -159,6 +159,7 @@ main {
     text-align: center;
     border-radius: 25px;
     overflow-x: hidden;
+    border: 1px solid black;
 }
 
 .section-header img {
@@ -191,9 +192,9 @@ main {
 
 .table-contents {
     width: 80%;
-    border:0px solid;
+    border: 0px solid;
     border-top: 1px solid;
-    text-align:left;
+    text-align: left;
     font-family: opensans-condensed-regular;
     font-size: 1.4em;
     color: rgb(61, 59, 52);
@@ -204,9 +205,10 @@ main {
 #marquee-container {
     width: 10000px;
     height: 256px;
-    overflow:visible;
+    overflow:hidden;
     margin-top: 10px auto;
     background: white;
+    border: 1px solid black
    }
 
 /*photobanner*/ 
@@ -224,12 +226,12 @@ main {
 */
 /*keyframe animations*/
 .first {
-    -webkit-animation: bannermove 20s linear infinite;
+    -webkit-animation: bannermove 30s linear infinite;
    }  
   
 @-webkit-keyframes "bannermove" {
     0% {margin-left: 42%;}
-    100% {margin-left: -36%;}
+    100% {margin-left: -35.5%;}
    }
 }
 /*todo: make a specific one for roadmap table*/
@@ -340,7 +342,7 @@ main {
         background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
-        justify-content:center;
+        justify-content:space-around;
     }
     
     .right-sidebar {
@@ -348,9 +350,10 @@ main {
         background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content:space-around;
         align-items: center;
-        padding-bottom: 40px;
+        padding-left: 2%;
+
     }
 
     /*added by Antho*/
@@ -468,14 +471,42 @@ main {
         border: none;
         cursor:pointer;
         background-color: transparent;
-      }
+    }
       
     .btn-img:hover img {
         opacity: 0.8;
         position: relative;
-        -webkit-transition: all 0.3s ease;
-        transform: scale(1.02)
-      }
+        -webkit-transition: all 0.1s ease;
+        transform: scale(1.04)
+    }
+    
+    .mint_button {
+        background: url("../media/mint_button_sprite.png") ;
+        width: 315px;
+        height: 81px;
+    }
+
+    .mint_button:hover {
+        background: url("../media/mint_button_sprite.png") ;
+        background-position: 0 -79px;
+        width: 315px;
+        height: 81 px;
+        cursor: pointer;
+    }
+
+    .leaderboard_button {
+        background: url("../media/leaderboard_button_sprite.png") ;
+        width: 315px;
+        height: 81px;
+    }
+
+    .leaderboard_button:hover {
+        background: url("../media/leaderboard_button_sprite.png") ;
+        background-position: 0 -79px;
+        width: 315px;
+        height: 81 px;
+        cursor: pointer;
+    }
 
     .bold-red {
         color: rgb(255, 68, 68);
