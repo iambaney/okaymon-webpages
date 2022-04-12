@@ -30,7 +30,7 @@ html {
 }
 
 body {
-    width: 100%;
+    width:  100%;
     height: 100%;
     background: url('../media/background_repeat.png');
     background-position: center;
@@ -63,7 +63,7 @@ main {
     display: none;
 }
 
-.banner-container-mobile {
+.banner-container-mobile  {
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -75,13 +75,20 @@ main {
     height: 100%;
     vertical-align: top;
 }
-
+::-webkit-scrollbar {
+    display: none;
+}
 .main-section {
     width: 100%;
     display: flex;
     flex-direction: column;
     overflow-y: hidden;
     align-items: center;
+}
+
+.bold-red {
+    color: rgb(255, 68, 68);
+    font-family: opensans-condensed-bold;
 }
 
 .left-sidebar, .right-sidebar {
@@ -148,11 +155,11 @@ main {
 }
 
 .section-body {
-    width: 85%;
+    width: 90%;
     background: #FFF7D3;
     z-index: 5;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
-    padding: 60px 0 20px 0;
+    padding: 50px 0 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,13 +169,14 @@ main {
     border: 1px solid black;
 }
 
+
 .section-header img {
     height: 100%;
     width: 100%;
 }
 
 .section-header span {
-    position: absolute;
+    position: absolute;    
 }
 
 .section-body h1 {
@@ -181,60 +189,73 @@ main {
     line-height: 1.2;
 }
 
+/*Exception for prologue section*/
+#div-section-0 {
+    margin-top: -50px;
+}
+#div-section-0 h1{
+    margin-top: -50px;
+    border-top: none;
+    padding-top: 60px;
+}
+#div-section-0 p{
+    margin-top: 20px;
+}
+
 .section-body p {
     text-align: center;
     width: 80%;
     font-family: opensans-condensed-regular;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    /*^^font size for mobile*/
     margin-top: 40px;
     color: rgb(61, 59, 52);
 }
-
 .table-contents {
-    width: 80%;
+    width: 85%;
     border: 0px solid;
     border-top: 1px solid;
     text-align: left;
     font-family: opensans-condensed-regular;
-    font-size: 1.4em;
+    font-size: 1.3em;
     color: rgb(61, 59, 52);
     justify-content: center;
     border-spacing: 15px;
 }
-
+/* Marquee start */
 #marquee-container {
-    width: 10000px;
+    width: 100%;
     height: 256px;
     overflow:hidden;
     margin-top: 10px auto;
     background: white;
-    border: 1px solid black
-   }
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
 
-/*photobanner*/ 
 .photobanner {
     height: 100%;
-    width: 100%;
+    width: 1000%;
     margin-bottom: 10px
-   }
- 
-/* block for zoom highlighting
-.photobanner img:hover {
-    -webkit-transition: all 0.3s ease;
-    transform: scale(1.05);
 }
-*/
-/*keyframe animations*/
 .first {
-    -webkit-animation: bannermove 30s linear infinite;
+    -webkit-animation: bannermove 10s linear infinite;
    }  
-  
+
 @-webkit-keyframes "bannermove" {
-    0% {margin-left: 42%;}
-    100% {margin-left: -35.5%;}
-   }
+    /*keyframes for mobile*/
+    0% {margin-left: -4000px;}
+    100% {margin-left: -12000px;}
+    }
 }
-/*todo: make a specific one for roadmap table*/
+    
+    /* block for zoom highlighting
+    .photobanner img:hover {
+        -webkit-transition: all 0.3s ease;
+        transform: scale(1.05);
+    }
+    */
+/*Marquee end */
 
 .bold-red {
     color: rgb(255, 68, 68);
@@ -254,9 +275,9 @@ main {
 }
 
 @media (min-width: 768px) {
-    .section {
+    /* .section {
         width: 80%;
-    }
+    } */
 
     .section-header {
         font-size: 2.4em;
@@ -279,8 +300,8 @@ main {
 /*Threshold for destop switch to mobile*/
 @media (min-width: 1400px) {
     ::-webkit-scrollbar {
-        width: 10;
-        /*background:rgb(255, 255, 255);A*/
+        display: none;
+
     }
 
     .banner-container-mobile {
@@ -307,7 +328,6 @@ main {
         margin: auto;
         border: 0px solid transparent;
         padding: 0px;
-     /*   border-image: url("../media/pixelborders.png") 25% round;*/
     }
 
     #banner-desktop {
@@ -331,7 +351,7 @@ main {
         width: 100%;
         overflow-y: scroll;
     }
-    
+
     .left-sidebar, .right-sidebar {
         width: 365px;
         min-width: 365px;
@@ -356,7 +376,6 @@ main {
 
     }
 
-    /*added by Antho*/
     .socials {
         display: flex;
         justify-content: center;
@@ -442,7 +461,7 @@ main {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .section-body h1 {
         width: 70%;
         color: rgb(61, 59, 52);
@@ -450,12 +469,6 @@ main {
         font-family: pixelate;
         letter-spacing: normal;
         border-top: 3px solid rgb(61, 59, 52);
-    }
-
-/*Exception for prologue section*/
-    #div-section-0 h1 {
-        margin-top: -60px;
-        border-top: none;
     }
 
     .section-body p {
@@ -508,11 +521,6 @@ main {
         cursor: pointer;
     }
 
-    .bold-red {
-        color: rgb(255, 68, 68);
-        font-family: opensans-condensed-bold;
-    }
-
     .tab {
         cursor: pointer;
         height: 125px;
@@ -542,4 +550,5 @@ main {
     #tab-5 {
         background: url('../media/tabs_5_off.png');
     }
+    
 }
