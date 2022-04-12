@@ -44,7 +44,42 @@ main {
     display: flex;
     flex-direction: column;
 }
+/* Marquee start */
+#marquee-container {
+    width: 100%;
+    height: 220px;
+    overflow:hidden;
+    margin-top: 10px auto;
+    background: white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
 
+.photobanner {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 10px
+}
+/* .first {
+    -webkit-animation: bannermove 5s linear infinite;
+   }  
+
+@-webkit-keyframes "bannermove" {
+    0% {
+        margin-left: -42%;
+    }
+    100% {
+        margin-left: -123.7%;
+    }
+} */
+    
+    /* block for zoom highlighting
+    .photobanner img:hover {
+        -webkit-transition: all 0.3s ease;
+        transform: scale(1.05);
+    }
+    */
+/*Marquee end */
 .content {
     overflow-y: scroll;
     flex: 1;
@@ -85,7 +120,6 @@ main {
     overflow-y: hidden;
     align-items: center;
 }
-
 .bold-red {
     color: rgb(255, 68, 68);
     font-family: opensans-condensed-bold;
@@ -202,6 +236,7 @@ main {
     margin-top: 20px;
 }
 
+
 .section-body p {
     text-align: center;
     width: 80%;
@@ -222,41 +257,6 @@ main {
     justify-content: center;
     border-spacing: 15px;
 }
-
-/* Marquee start */
-#marquee-container {
-    width: 100%;
-    height: 256px;
-    overflow:hidden;
-    margin-top: 10px auto;
-    background: white;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-}
-
-.photobanner {
-    height: 100%;
-    width: 1000%;
-    margin-bottom: 10px
-}
-.first {
-    -webkit-animation: bannermove 10s linear infinite;
-   }  
-
-@-webkit-keyframes "bannermove" {
-    /*keyframes for mobile*/
-    0% {margin-left: -7000px;}
-    100% {margin-left: -14740px;}
-    }
-}
-    
-    /* block for zoom highlighting
-    .photobanner img:hover {
-        -webkit-transition: all 0.3s ease;
-        transform: scale(1.05);
-    }
-    */
-/*Marquee end */
 
 .bold-red {
     color: rgb(255, 68, 68);
@@ -298,7 +298,7 @@ main {
         font-size: 3em;
     }
 }
-/*Threshold for destop switch to mobile*/
+/*Threshold from mobile to desktop*/
 @media (min-width: 1400px) {
     ::-webkit-scrollbar {
         display: none;
@@ -352,7 +352,6 @@ main {
         width: 100%;
         overflow-y: scroll;
     }
-
     .left-sidebar, .right-sidebar {
         width: 365px;
         min-width: 365px;
