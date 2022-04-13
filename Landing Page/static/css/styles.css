@@ -209,23 +209,24 @@ main {
     border-bottom: 1px solid black;
     overflow: hidden;
 }
-/* mobile behavior */
+
+/* mobile marquee behavior */
 .photobanner {
     background: url('../media/marquee_banner2.png') repeat-x;
     margin-bottom: 10px;
     width: 100%;
     height: 100%;
-    animation: slide 34s linear infinite;
+    animation: slide 33s linear infinite;
 }
 @keyframes slide{
     0% {
-      transform: translate3d(0px, 0, 0);
+      transform: translate3d(0, 0, 0);
     }
     100% {
       transform: translate3d(-4335px, 0, 0);
     }
   }
-/* end marquee for mobile */
+
 
 .section-body p {
     text-align: center;
@@ -269,56 +270,21 @@ main {
 .socials img {
     margin: 0 10px;
 }
-/* Marquee v2 start*/
-/* @media (min-width: 768px) {
-    .section {
-        width: 80%;
-    }
 
-    .section-header {
-        font-size: 2.4em;
-    }
-
-    .section-header span {
-        --stroke-width: 3pt;
-    }
-
-    .section-body h1 {
-        font-size: 1.6em;
-    }
-} */
-
-/* @media (min-width: 1024px) {
-    .section-header {
-        font-size: 3em;
-    }
-
-} */
 /*Threshold from mobile to desktop*/
-@media (min-width: 1400px) {
+@media (min-width: 1300px) {
     ::-webkit-scrollbar {
-        display: none;
-
+        display:none;
     }
 
-/* Marquee v2 start, Desktop*/
-.photobanner {
-    background: url('../media/marquee_banner2.png') repeat-x;
-    height: 256px;
-    width: 100%;
-    margin-bottom: 10px;
-    animation: slide 34s linear infinite;
+/* Marquee bahvior Desktop*/
+    .photobanner {
+        background: url('../media/marquee_banner2.png') repeat-x;
+        height: 256px;
+        width: 100%;
+        margin-bottom: 10px;
+        animation: slide 33s linear infinite;
 }
-
-@keyframes slide{
-    0% {
-      transform: translate3d(0, 0, 0);
-    }
-    100% {
-      transform: translate3d(-4335px, 0, 0);
-    }
-  }
-/*Marquee v2 end */
 
     .banner-container-mobile {
         display: none;
@@ -565,5 +531,4 @@ main {
     #tab-5 {
         background: url('../media/tabs_5_off.png');
     }
-    
 }
