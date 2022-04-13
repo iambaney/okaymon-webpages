@@ -32,7 +32,7 @@ html {
 body {
     width:  100%;
     height: 100%;
-    background: url('../media/background_repeat.png');
+    background: url('../media/background_repeat_web.jpg');
     background-position: center;
 }
 
@@ -211,18 +211,18 @@ main {
 }
 /* mobile behavior */
 .photobanner {
-    background: url('../media/marquee_banner.png') repeat-x;
-    margin-bottom: 0px;
+    background: url('../media/marquee_banner2.png') repeat-x;
+    margin-bottom: 10px;
     width: 100%;
     height: 100%;
-    animation: slide 15s linear infinite;
+    animation: slide 34s linear infinite;
 }
 @keyframes slide{
     0% {
       transform: translate3d(0px, 0, 0);
     }
     100% {
-      transform: translate3d(-3843px, 0, 0);
+      transform: translate3d(-4335px, 0, 0);
     }
   }
 /* end marquee for mobile */
@@ -303,11 +303,11 @@ main {
 
 /* Marquee v2 start, Desktop*/
 .photobanner {
-    background: url('../media/marquee_banner.png') repeat-x;
+    background: url('../media/marquee_banner2.png') repeat-x;
     height: 256px;
     width: 100%;
     margin-bottom: 10px;
-    animation: slide 15s linear infinite;
+    animation: slide 34s linear infinite;
 }
 
 @keyframes slide{
@@ -315,7 +315,7 @@ main {
       transform: translate3d(0, 0, 0);
     }
     100% {
-      transform: translate3d(-3843px, 0, 0);
+      transform: translate3d(-4335px, 0, 0);
     }
   }
 /*Marquee v2 end */
@@ -373,7 +373,7 @@ main {
     }
     
     .left-sidebar {
-        background-image: url('../media/page\ border_left_short.png');
+        background-image: url('../media/page\ border_left_short_web.jpg');
         background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
@@ -381,7 +381,7 @@ main {
     }
     
     .right-sidebar {
-        background-image: url('../media/page\ border_right_short.png');
+        background-image: url('../media/page\ border_right_short_web.jpg');
         background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
