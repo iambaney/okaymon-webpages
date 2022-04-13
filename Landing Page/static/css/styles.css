@@ -44,42 +44,6 @@ main {
     display: flex;
     flex-direction: column;
 }
-/* Marquee start */
-#marquee-container {
-    width: 100%;
-    height: 220px;
-    overflow:hidden;
-    margin-top: 10px auto;
-    background: white;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-}
-
-.photobanner {
-    height: 100%;
-    width: 100%;
-    margin-bottom: 10px
-}
-/* .first {
-    -webkit-animation: bannermove 5s linear infinite;
-   }  
-
-@-webkit-keyframes "bannermove" {
-    0% {
-        margin-left: -42%;
-    }
-    100% {
-        margin-left: -123.7%;
-    }
-} */
-    
-    /* block for zoom highlighting
-    .photobanner img:hover {
-        -webkit-transition: all 0.3s ease;
-        transform: scale(1.05);
-    }
-    */
-/*Marquee end */
 .content {
     overflow-y: scroll;
     flex: 1;
@@ -235,7 +199,33 @@ main {
 #div-section-0 p{
     margin-top: 20px;
 }
-
+/* defining marquee.*/
+#marquee-container {
+    width: 10000%;
+    height: 256px;
+    margin-top: 10px auto;
+    background: white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+}
+/* mobile behavior */
+.photobanner {
+    background: url('../media/marquee_banner.png') repeat-x;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 100%;
+    animation: slide 15s linear infinite;
+}
+@keyframes slide{
+    0% {
+      transform: translate3d(0px, 0, 0);
+    }
+    100% {
+      transform: translate3d(-3843px, 0, 0);
+    }
+  }
+/* end marquee for mobile */
 
 .section-body p {
     text-align: center;
@@ -255,7 +245,12 @@ main {
     font-size: 1.3em;
     color: rgb(61, 59, 52);
     justify-content: center;
-    border-spacing: 15px;
+    border-spacing: 10px;
+}
+
+.table-contents td{
+    min-width: 110px;
+    border: 0px solid;
 }
 
 .bold-red {
@@ -274,11 +269,11 @@ main {
 .socials img {
     margin: 0 10px;
 }
-
-@media (min-width: 768px) {
-    /* .section {
+/* Marquee v2 start*/
+/* @media (min-width: 768px) {
+    .section {
         width: 80%;
-    } */
+    }
 
     .section-header {
         font-size: 2.4em;
@@ -291,19 +286,39 @@ main {
     .section-body h1 {
         font-size: 1.6em;
     }
-}
+} */
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
     .section-header {
         font-size: 3em;
     }
-}
+
+} */
 /*Threshold from mobile to desktop*/
 @media (min-width: 1400px) {
     ::-webkit-scrollbar {
         display: none;
 
     }
+
+/* Marquee v2 start, Desktop*/
+.photobanner {
+    background: url('../media/marquee_banner.png') repeat-x;
+    height: 256px;
+    width: 100%;
+    margin-bottom: 10px;
+    animation: slide 15s linear infinite;
+}
+
+@keyframes slide{
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-3843px, 0, 0);
+    }
+  }
+/*Marquee v2 end */
 
     .banner-container-mobile {
         display: none;
