@@ -240,19 +240,23 @@ main {
 }
 
 .bios_layout {
-    width: 85%;   
-    padding: 15px;
+    width: 80%;   
+    padding-top: 15px;
+    padding-bottom: 15px;
     border: 0px solid;
     border-top: 1px solid;
-    text-align: left;
     font-family: opensans-condensed-regular;
     font-size: 1.3em;
     color: rgb(61, 59, 52);
+    text-align:justify;
+    hyphens: auto;
 }
 .float_pfp img{
     float:left;
     margin-right: 4px;
-    margin-bottom: -4px;
+    margin-bottom: -4px; 
+    max-width: 25%;
+    min-width: 128px;
 }
 
 .table-contents {
