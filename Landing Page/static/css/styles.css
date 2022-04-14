@@ -233,21 +233,21 @@ main {
     border: 0px solid;
     border-top: 1px solid;
     font-family: opensans-condensed-regular;
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: rgb(61, 59, 52);
     text-align:justify;
-    hyphens: auto;
+    hyphens: auto manual;
 }
 .float_pfp img{
     float:left;
     margin-right: 4px;
     margin-bottom: -4px; 
     max-width: 25%;
-    min-width: 128px;
+    min-width: 92px;
 }
 
 .table-contents {
-    min-width: 300px;
+    min-width: 250px;
     width: 85%;
     border: 0px solid;
     border-top: 1px solid;
