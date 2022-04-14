@@ -199,6 +199,7 @@ main {
 #div-section-0 p{
     margin-top: 20px;
 }
+
 /* defining marquee.*/
 #marquee-container {
     width: 10000%;
@@ -237,6 +238,23 @@ main {
     margin-top: 22px;
     color: rgb(61, 59, 52);
 }
+
+.bios_layout {
+    width: 85%;   
+    padding: 15px;
+    border: 0px solid;
+    border-top: 1px solid;
+    text-align: left;
+    font-family: opensans-condensed-regular;
+    font-size: 1.3em;
+    color: rgb(61, 59, 52);
+}
+.float_pfp img{
+    float:left;
+    margin-right: 4px;
+    margin-bottom: -4px;
+}
+
 .table-contents {
     min-width: 300px;
     width: 85%;
