@@ -117,7 +117,7 @@ main {
 
 .section-header span {
     color: rgb(255, 243, 28);
-    --stroke-width: 2pt;
+    --stroke-width: 3pt;
     --stroke-color: rgb(72, 75, 238);
     text-shadow: calc(var(--stroke-width) * 1) calc(var(--stroke-width) * 0) 0
     var(--stroke-color),
@@ -221,7 +221,6 @@ main {
     width: 80%;
     font-family: opensans-condensed-regular;
     font-size: 1.3em;
-    /*^^font size for mobile*/
     margin-top: 22px;
     color: rgb(61, 59, 52);
 }
@@ -239,7 +238,7 @@ main {
     hyphens: auto manual;
 }
 .float_pfp img{
-    float:left;
+    float: left;
     margin-right: 4px;
     margin-bottom: -4px; 
     max-width: 25%;
@@ -278,6 +277,27 @@ main {
 
 .socials img {
     margin: 0 10px;
+}
+
+/* Tablet-size header */
+@media (min-width: 640px) {
+    .section-header {
+        width: 100%;
+        max-width: 1400px;
+        max-height: 300px;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: opensans;
+        font-size: 4em;        
+        letter-spacing: -3px;
+        position: relative;
+    }
+    .section-header span {
+        color: rgb(255, 243, 28);
+        --stroke-width: 4pt;
+
 }
 
 /*Threshold from mobile to desktop*/
