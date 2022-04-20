@@ -91,7 +91,7 @@ main {
 }
 
 .left-sidebar, .right-sidebar {
-    display: none
+    display: none;
 }
 
 .section {
@@ -297,7 +297,7 @@ main {
     .section-header span {
         color: rgb(255, 243, 28);
         --stroke-width: 4pt;
-
+    }
 }
 
 /*Threshold from mobile to desktop*/
@@ -497,7 +497,7 @@ main {
     .btn-img:hover img {
         opacity: 0.8;
         position: relative;
-        -webkit-transition: all 0.1s ease;
+        transition: all 0.1s ease;
         transform: scale(1.04)
     }
     
@@ -542,7 +542,7 @@ main {
         color: rgb(255, 247, 211);
         background-repeat: no-repeat;
     }
-    
+
     #tab-1 {
         background: url('../media/tabs_1_on.png');
     }
