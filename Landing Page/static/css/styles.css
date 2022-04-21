@@ -214,7 +214,17 @@ main {
     100% {
       transform: translate3d(-4335px, 0, 0);
     }
-  } */
+} */
+
+/* #roadmap {
+    background-image: url("../media/roadmap_mockup.png");
+    background-repeat: no-repeat;
+    background-size: 85%;
+    background-position-x: center;
+    background-position-y: center;
+    background-position-y: 160px;
+    min-height: 1100px;
+} */
 
 .section-body p {
     text-align: center;
