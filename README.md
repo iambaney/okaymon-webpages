@@ -1,3 +1,4 @@
+Scrollfix edit
 ## Leaderboard Page Mockup
 **Layout, top:**
 ![Layout guide 1](./Leaderboard%20Assets/%23leaderboard%20layout_guide%201.jpg)
