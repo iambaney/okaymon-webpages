@@ -12,30 +12,31 @@
         <div class="banner-container-desktop">
             <img src='./static/media/Poster_3870x1700_web.jpg' id='banner-desktop' alt="Okaymon Poster" />
         </div>
-        <div class="content">
-            <div class="banner-container-mobile">
-                <img src='./static/media/Poster_3870x1700_web.jpg' id='banner-mobile' alt="Okaymon Poster" />
-            </div>
-            <div class="left-sidebar">
-                <div class="tab" id="tab-1">
-                    <span>Welcome</span>
-                </div>
-                <div class="tab" id="tab-2">
-                    <span>NFTs</span>
-                </div>
-                <div class="tab" id="tab-3">
-                    <span>Art</span>
-                </div>
-                <div class="tab" id="tab-4">
-                    <span>Roadmap</span>
-                </div>
-                <div class="tab" id="tab-5">
-                    <span>Team</span>
-                </div>
+        <div class="banner-container-mobile">
+            <img src='./static/media/Poster_3870x1700_web.jpg' id='banner-mobile' alt="Okaymon Poster" />
+        </div>
 
+    <div class="flexContainer">
+        <div class="sticky left-sidebar">
+            <div class="tab" id="tab-1">
+                <span>Welcome</span>
             </div>
-<!-- end left-sidebar -->
-            <div class="main-section">
+            <div class="tab" id="tab-2">
+                <span>NFTs</span>
+            </div>
+            <div class="tab" id="tab-3">
+                <span>Art</span>
+            </div>
+            <div class="tab" id="tab-4">
+                <span>Roadmap</span>
+            </div>
+            <div class="tab" id="tab-5">
+                <span>Team</span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="main-section" id="main-section">
+
                 <div class="section" id="div-section-1">
                     <div class="section-header" id="section-one">
                         <img src="./static/media/section_background_1.png" />
@@ -308,34 +309,34 @@
                     </div>
                 </div>
             </div>
-<!-- end main middle section -->
-            <div class="right-sidebar">
-                <div class="mint_button">
-                    <a href="#" target="_blank" rel="noopener noreferrer"></a>
-                </div>
-                <div class="leaderboard_button">
-                    <a href="#" target="_blank" rel="noopener noreferrer"></a>
-                </div>
-                <div>
-                    <a style="opacity: 1.0;" target="_blank" rel="noopener noreferrer">
-                        <img src="./static/media/Okayball_blue.png" height="200px" alt="Blue Okayball"/>
-                    </a>
-                </div>
-                <div class="socials">
-                    <!-- <a class="btn-img" href="https://opensea.io/collection/okaymon-gen-0" target="_blank" rel="noopener noreferrer">
-                        <img src="./static/media/social icons/open sea.png" alt="Explore our OpenSea Collection" />
-                    </a> -->
-                    <a class="btn-img" href="https://discord.gg/gDF2tu2VSm" target="_blank" rel="noopener noreferrer">
-                        <img src="./static/media/social icons/discord.png" alt="Join our Discord"/>
-                    </a>
-                    <a class="btn-img" href="https://twitter.com/OkaymonNFT" target="_blank" rel="noopener noreferrer">
-                        <img src="./static/media/social icons/twitter.png" alt="Follow us on Twitter"/>
-                    </a>
-                </div>
-                    <img src="./static/media/logo_small.png" alt="Okaymon logo" />
-            </div>
-
         </div>
+        <div class="sticky right-sidebar">
+            <div class="mint_button">
+                <a href="#" target="_blank" rel="noopener noreferrer"></a>
+            </div>
+            <div class="leaderboard_button">
+                <a href="#" target="_blank" rel="noopener noreferrer"></a>
+            </div>
+            <div>
+                <a style="opacity: 1.0;" target="_blank" rel="noopener noreferrer">
+                    <img src="./static/media/Okayball_blue.png" height="200px" alt="Blue Okayball"/>
+                </a>
+            </div>
+            <div class="socials">
+                <!-- <a class="btn-img" href="https://opensea.io/collection/okaymon-gen-0" target="_blank" rel="noopener noreferrer">
+                    <img src="./static/media/social icons/open sea.png" alt="Explore our OpenSea Collection" />
+                </a> -->
+                <a class="btn-img" href="https://discord.gg/gDF2tu2VSm" target="_blank" rel="noopener noreferrer">
+                    <img src="./static/media/social icons/discord.png" alt="Join our Discord"/>
+                </a>
+                <a class="btn-img" href="https://twitter.com/OkaymonNFT" target="_blank" rel="noopener noreferrer">
+                    <img src="./static/media/social icons/twitter.png" alt="Follow us on Twitter"/>
+                </a>
+            </div>
+                <img src="./static/media/logo_small.png" alt="Okaymon logo" />
+        </div>
+    </div>
+
         <!-- end content -->
 <!--Begin bottom nav for mobile -->
         <div id="bottom-nav">
@@ -378,7 +379,7 @@
         for (let item of scrollItems) {
             itemsArray.push(item)
         }
-        
+
         let lastId
         mainSection.onscroll = function(e) {
             let fromTop = this.scrollTop + banner.offsetHeight + 200 /*+200 is so tab highlighting follows page position*/
@@ -471,5 +472,17 @@
             tabFive.style.background = "url('./static/media/tabs_5_on.png')"
         }
     </script>
+
+<!-- Attempt at a scroll listener: -->
+    <!-- <script type="text/javascript">
+        const centerSection = document.getElementById('main-section')
+        window.addEventListener('scroll',(event) => {
+             if ((window.innerHeight+window.pageYOffset) >= document.body.scrollHeight) {
+                console.log('Scrolling...')
+                centerSection.style.overflow = "auto"
+                centerSection.focus()
+                }
+            })
+    </script> -->
 </body>
 </html>
