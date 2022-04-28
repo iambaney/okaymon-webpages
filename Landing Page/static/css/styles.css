@@ -99,6 +99,7 @@ main {
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
+    min-width: 300px;
 }
 
 .section-header {
@@ -163,7 +164,7 @@ main {
     align-items: center;
     text-align: center;
     border-radius: 25px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     border: 1px solid black;
 }
 
@@ -215,16 +216,6 @@ main {
     }
 } */
 
-/* #roadmap {
-    background-image: url("../media/roadmap_mockup.png");
-    background-repeat: no-repeat;
-    background-size: 85%;
-    background-position-x: center;
-    background-position-y: center;
-    background-position-y: 160px;
-    min-height: 1100px;
-} */
-
 .section-body p {
     text-align: center;
     width: 80%;
@@ -255,20 +246,25 @@ main {
 }
 
 .table-contents {
+    background-color: rgba(255, 255, 255, 0.8);
     min-width: 250px;
-    width: 85%;
-    border: 0px solid;
-    border-top: 1px solid;
+    width: 100%;
+    border: none;
+    margin: 10px 0 10px 0;
+    border-radius: 5px;
+    /* border-top: 1px solid; */
     text-align: left;
     font-family: opensans-condensed-regular;
-    font-size: 1.3em;
+    font-size: 1.25em;
     color: rgb(61, 59, 52);
     justify-content: center;
+    padding-left: 4px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 }
 
-.table-contents td{
-    min-width: 110px;
+.table-contents td, h2{
     border: 0px solid;
+    padding: 4px;
 }
 
 .bold-red {
@@ -300,6 +296,20 @@ main {
     text-align: center;
     flex-direction: column;
     align-items: center;
+}
+
+#roadmap {
+    background-image: url("../media/map_v2_small.png");
+    background-repeat: repeat;
+    background-size: 80%;
+    background-position-x: center;
+    border: none;
+    width: 100%;
+    max-width: 1300px;
+    border-radius: 20px;
+    margin: 10px 0px 0px 0px;
+    padding: 20px 0 20px 0;
+    box-shadow: none;
 }
 
 /* Tablet-size header */
@@ -389,7 +399,6 @@ main {
         align-items: center;
         margin: 0 10px;
         width: 100%;
-
         overflow-y: hidden;
     }
 
@@ -403,10 +412,10 @@ main {
     .left-sidebar, .right-sidebar {
         width: 365px;
         padding-top: 1%;
-        padding-bottom: 7%;
+        padding-bottom: 38%;
         min-width: 365px;
         margin: 0px;
-        height: 1000px;
+        height: 1500px;
         width: 365px;
         border-right: 1px solid black;
         border-left: 1px solid black;
@@ -445,7 +454,7 @@ main {
         flex-direction: column;
         align-items: center;
         justify-content: top;
-        margin:20px auto;
+        margin: 20px 0 20px 0;
     }
     
     .section-header {
@@ -542,7 +551,15 @@ main {
         opacity: 0.8;
         position: relative;
         transition: all 0.1s ease;
-        transform: scale(1.04)
+        -webkit-transition: all 0.1s ease;
+        -moz-transition: all 0.1s ease;
+        -o-transition: all 0.1s ease;
+
+        transform: scale(1.04);
+        -webkit-transform: scale(1.04);
+        -ms-transform: scale(1.04);
+        -moz-transform: scale(1.04);
+        -o-transform: scale(1.04);
     }
     
     .mint_button {
