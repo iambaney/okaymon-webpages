@@ -9,11 +9,11 @@
 </head>
 <body>
     <main>
-        <div class="banner-container-desktop">
+        <!-- <div class="banner-container-desktop">
             <img src='./static/media/Poster_3870x1700_web.jpg' id='banner-desktop' alt="Okaymon Poster" />
-        </div>
-        <div class="banner-container-mobile">
-            <img src='./static/media/Poster_3870x1700_web.jpg' id='banner-mobile' alt="Okaymon Poster" />
+        </div> -->
+        <div class="banner-container">
+            <img src='./static/media/Poster_3870x1700_web.jpg' id='banner' alt="Okaymon Poster" />
         </div>
 
     <div class="flexContainer">
@@ -340,15 +340,9 @@
                 </a>
             </div>
             <div class="socials">
-                <!-- <a class="btn-img" href="https://opensea.io/collection/okaymon-gen-0" target="_blank" rel="noopener noreferrer">
-                    <img src="./static/media/social icons/open sea.png" alt="Explore our OpenSea Collection" />
-                </a> -->
-                <a class="btn-img" href="https://discord.gg/gDF2tu2VSm" target="_blank" rel="noopener noreferrer">
-                    <img src="./static/media/social icons/discord.png" alt="Join our Discord"/>
-                </a>
-                <a class="btn-img" href="https://twitter.com/OkaymonNFT" target="_blank" rel="noopener noreferrer">
-                    <img src="./static/media/social icons/twitter.png" alt="Follow us on Twitter"/>
-                </a>
+                <a class="btn-img" id="discord_icon" href="https://discord.gg/gDF2tu2VSm" target="_blank" rel="noopener nereferrer" alt="Join our Discord"></a>
+                <a class="btn-img" id="twitter_icon" href="https://twitter.com/OkaymonNFT" target="_blank" rel="noopener nereferrer" alt="Follow us on Twitter"></a>
+                <!-- <a class="btn-img" id="opensea_icon" href="https://opensea.io/collection/okaymon-gen-0" target="_blank" rel="noopener nereferrer" alt="View the collection"></a> -->
             </div>
                 <img src="./static/media/logo_small.png" alt="Okaymon logo" />
         </div>
@@ -358,18 +352,10 @@
 <!--Begin bottom nav for mobile -->
 <div class="nav-footer">
     <div class="socials">
-                  <!-- <a href="https://opensea.io/collection/okaymon-gen-0" target="_blank" rel="noopener noreferrer">
-            <img src="./static/media/social icons/open sea.png" alt="Explore our OpenSea Collection" />
-        </a> -->
-        <a href="https://discord.gg/gDF2tu2VSm" target="_blank" rel="noopener nereferrer">
-            <img src="./static/media/social icons/discord.png" alt="Join our Discord" />
-        </a>
-        <a href="./index.html#div-section-2" rel="noopener nereferrer">
-            <img src="./static/media/social icons/home.png" alt="Go Back" />
-        </a>
-        <a href="https://twitter.com/OkaymonNFT" target="_blank" rel="noopener noreferrer">
-            <img src="./static/media/social icons/twitter.png" alt="Follow us on Twitter" />
-        </a>
+        <a id="discord_icon" href="https://discord.gg/gDF2tu2VSm" target="_blank" rel="noopener nereferrer" alt="Join our Discord"></a>
+        <a id="home_icon" href="" alt="Return to top"></a>
+        <a id="twitter_icon" href="https://twitter.com/OkaymonNFT" target="_blank" rel="noopener nereferrer" alt="Follow us on Twitter"></a>
+        <!-- <a id="opensea_icon" href="https://opensea.io/collection/okaymon-gen-0" target="_blank" rel="noopener nereferrer" alt="View the collection"></a> -->
     </div>
 </div>
 <!-- End mobile bottom nav -->
@@ -390,7 +376,7 @@
         const tabs = document.getElementsByClassName('tab')
         const scrollItems = document.getElementsByClassName('section')
         const mainSection = document.getElementsByClassName('main-section')[0]
-        const banner = document.getElementsByClassName('banner-container-desktop')[0]
+        const banner = document.getElementsByClassName('banner-container')[0]
 
         let itemsArray = []
         for (let item of scrollItems) {

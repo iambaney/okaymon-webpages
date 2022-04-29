@@ -64,18 +64,18 @@ main {
     bottom: 0;
 }
 
-.banner-container-desktop, #banner-desktop {
+/* .banner-container-desktop, #banner-desktop {
     display: none;
-}
+} */
 
-.banner-container-mobile  {
+.banner-container  {
     width: 100%;
     background-size: cover;
     background-position: center;
     z-index: 100;
 }
 
-#banner-mobile {
+#banner {
     width: 100%;
     height: 100%;
     vertical-align: top;
@@ -280,13 +280,14 @@ main {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    max-width: 30%;
+    max-width: 60%;
     height: 68px;
 }
 
-.socials img {
+/* .socials img {
     margin: 0 10px;
-}
+    justify-content: space-evenly;
+} */
 
 .ccobanner {
     width: 90%;
@@ -314,6 +315,28 @@ main {
     margin: 10px 0px 0px 0px;
     padding: 20px 0 20px 0;
     box-shadow: none;
+}
+
+#home_icon{
+    background:url("../media/social icons/social_sprites.png");
+    min-width:68px;
+    margin: 0 5px 0 5px;
+}
+#discord_icon {
+    background:url("../media/social icons/social_sprites.png") -68px;
+    min-width: 68px;
+    margin: 0 5px 0 5px;
+}
+#twitter_icon {
+    background:url("../media/social icons/social_sprites.png") -136px;
+    min-width:68px;
+    margin: 0 5px 0 5px;
+}
+
+#opensea_icon {
+    background:url("../media/social icons/social_sprites.png") -204px;
+    min-width:68px;
+    margin: 0 5px 0 5px;
 }
 
 /* Tablet-size header */
@@ -349,13 +372,13 @@ main {
         animation: slide 33s linear infinite;
 } */
 
-    .banner-container-mobile {
+    /* .banner-container-mobile {
         display: none;
-    }
+    } */
 
-    .banner-container-desktop, #banner-desktop {
+    /* .banner-container-desktop, #banner-desktop {
         display: block;
-    }
+    } */
 
     .nav-footer {
         display: none;
@@ -366,7 +389,7 @@ main {
         height: fit-content;
     }
     
-    .banner-container-desktop {
+    /* .banner-container-desktop {
         width: 100%;
         height: auto;
         z-index: 100;
@@ -379,7 +402,7 @@ main {
     #banner-desktop {
         width: 100%;
         height: auto;
-    }
+    } */
     
     .content {
         display: flex;
@@ -552,7 +575,7 @@ main {
         background-color: transparent;
     }
       
-    .btn-img:hover img {
+    .btn-img:hover {
         opacity: 0.8;
         position: relative;
         transition: all 0.1s ease;
