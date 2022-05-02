@@ -434,15 +434,16 @@ main {
         padding-left: 2%;
     }
     
-    #bottom-logo {
+    /* #bottom-logo {
         position: sticky;
         top: 100%;
-    }
+    } */
 
     .socials {
         display: flex;
         justify-content: center;
         width: 100%;
+        margin: 10px;
     }
     
     .socials img {
@@ -567,7 +568,7 @@ main {
         background: url("../media/mint_button_sprite.png") ;
         width: 315px;
         height: 81px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .mint_button:hover {
@@ -582,7 +583,7 @@ main {
         background: url("../media/leaderboard_button_sprite.png") ;
         width: 315px;
         height: 81px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .leaderboard_button:hover {
@@ -631,7 +632,7 @@ main {
         justify-content:space-around;
     }
     .right-sidebar {
-        /* padding-bottom: 600px; */
-        /* justify-content:space-around; */
+        padding-bottom: 600px;
+        justify-content:space-around;
     }
 }
