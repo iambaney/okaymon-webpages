@@ -44,12 +44,12 @@ main {
     flex-direction: column;
 }
 .content {
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     flex: 1;
 }
-.content::-webkit-scrollbar {
+/* .content::-webkit-scrollbar {
     display: none;
-}
+} */
 
 .nav-footer {
     background:rgb(72, 75, 238);
@@ -116,7 +116,7 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     align-items: center;
 }
 .bold-red {
@@ -417,11 +417,11 @@ main {
         display: flex;
         flex-direction: row;
         width: 100%;
-        overflow: visible;
+        /* overflow: visible; */
         margin-top: 0px;
     }
     
-    .flexContainer{
+    .main-container{
         width: 100%;
         height: fit-content;
         display: flex;
@@ -435,7 +435,7 @@ main {
         align-items: center;
         margin: 0 10px;
         width: 100%;
-        overflow-y: hidden;
+        /* overflow-y: hidden; */
     }
 
 

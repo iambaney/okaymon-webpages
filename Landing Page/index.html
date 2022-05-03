@@ -11,8 +11,8 @@
         <div class="banner-container">
             <img src='./static/media/Poster_3870x1700_web.jpg' id='banner' alt="Okaymon Poster" />
         </div>
-        <div class="flexContainer">
-            <div class="left-sidebar">
+        <div class="main-container">
+            <div class="sticky left-sidebar">
                 <div class="sticky tabs-and-yellow-bar">
                     <div class="tab_container">
                         <div class="tab" id="tab-1">
@@ -53,8 +53,8 @@
             <div class="content">
                 <div class="main-section" id="main-section">
                     <div class="section-header" id="mobile-quicklinks">
-                        <a class="mint_button" href="#" target="_blank" rel="noopener noreferrer"></a>
-                        <a class="leaderboard_button" href="#" target="_blank" rel="noopener noreferrer"></a>
+                        <a class="mint_button" target="_blank" rel="noopener noreferrer"></a>
+                        <a class="leaderboard_button" target="_blank" rel="noopener noreferrer"></a>
                     </div>
                     <div class="section" id="div-section-1">
                         <div class="section-header" id="section-one">
@@ -346,10 +346,10 @@
                     </div>
                     <div class="tab_container" style="padding-right: 5%;">
                         <div class="mint_button">
-                            <a href="#" target="_blank" rel="noopener noreferrer"></a>
+                            <a target="_blank" rel="noopener noreferrer"></a>
                         </div>
                         <div class="leaderboard_button">
-                            <a href="#" target="_blank" rel="noopener noreferrer"></a>
+                            <a target="_blank" rel="noopener noreferrer"></a>
                         </div>
                         <div>
                             <a target="_blank" rel="noopener noreferrer">
@@ -400,7 +400,8 @@
 
         const tabs = document.getElementsByClassName('tab')
         const scrollItems = document.getElementsByClassName('section')
-        const mainSection = document.getElementsByClassName('main-section')[0]
+        const mainSection = document.getElementsByClassName('right-sidebar')[0]
+        // const mainSection = document.getElementsByClassName('main-section')[0]
         const banner = document.getElementsByClassName('banner-container')[0]
 
         let itemsArray = []
@@ -410,7 +411,8 @@
 
         let lastId
         mainSection.onscroll = function(e) {
-            let fromTop = this.scrollTop + banner.offsetHeight + 200 /*+200 is so tab highlighting follows page position*/
+            console.log("4")
+            let fromTop = this.scrollTop /* + banner.offsetHeight + 200 /*+200 is so tab highlighting follows page position*/
             let cur = itemsArray.filter(function(item) {
                 if (item.offsetTop < fromTop) {
                     return item
@@ -426,11 +428,6 @@
                     tabThree.style.border = "7px solid transparent"
                     tabFour.style.border = "7px solid transparent"
                     tabFive.style.border = "7px solid transparent"
-                    // tabOne.style.background = "url('./static/media/tabs_1_on.png')"
-                    // tabTwo.style.background = "url('./static/media/tabs_2_off.png')"
-                    // tabThree.style.background = "url('./static/media/tabs_3_off.png')"
-                    // tabFour.style.background = "url('./static/media/tabs_4_off.png')"
-                    // tabFive.style.background = "url('./static/media/tabs_5_off.png')"
                 }
                 else if (lastId == "div-section-2") {
                     tabOne.style.border = "7px solid transparent"
@@ -438,11 +435,6 @@
                     tabThree.style.border = "7px solid transparent"
                     tabFour.style.border = "7px solid transparent"
                     tabFive.style.border = "7px solid transparent"
-                    // tabOne.style.background = "url('./static/media/tabs_1_off.png')"
-                    // tabTwo.style.background = "url('./static/media/tabs_2_on.png')"
-                    // tabThree.style.background = "url('./static/media/tabs_3_off.png')"
-                    // tabFour.style.background = "url('./static/media/tabs_4_off.png')"
-                    // tabFive.style.background = "url('./static/media/tabs_5_off.png')"
                 }
                 else if (lastId == "div-section-3") {
                     tabOne.style.border = "7px solid transparent"
@@ -450,11 +442,6 @@
                     tabThree.style.border = "7px solid"
                     tabFour.style.border = "7px solid transparent"
                     tabFive.style.border = "7px solid transparent"
-                    // tabOne.style.background = "url('./static/media/tabs_1_off.png')"
-                    // tabTwo.style.background = "url('./static/media/tabs_2_off.png')"
-                    // tabThree.style.background = "url('./static/media/tabs_3_on.png')"
-                    // tabFour.style.background = "url('./static/media/tabs_4_off.png')"
-                    // tabFive.style.background = "url('./static/media/tabs_5_off.png')"
                 }
                 else if (lastId == "div-section-4") {
                     tabOne.style.border = "7px solid transparent"
@@ -462,11 +449,6 @@
                     tabThree.style.border = "7px solid transparent"
                     tabFour.style.border = "7px solid"
                     tabFive.style.border = "7px solid transparent"
-                    // tabOne.style.background = "url('./static/media/tabs_1_off.png')"
-                    // tabTwo.style.background = "url('./static/media/tabs_2_off.png')"
-                    // tabThree.style.background = "url('./static/media/tabs_3_off.png')"
-                    // tabFour.style.background = "url('./static/media/tabs_4_on.png')"
-                    // tabFive.style.background = "url('./static/media/tabs_5_off.png')"
                 }
                 else if (lastId == "div-section-5") {
                     tabOne.style.border = "7px solid transparent"
@@ -474,11 +456,6 @@
                     tabThree.style.border = "7px solid transparent"
                     tabFour.style.border = "7px solid transparent"
                     tabFive.style.border = "7px solid"
-                    // tabOne.style.background = "url('./static/media/tabs_1_off.png')"
-                    // tabTwo.style.background = "url('./static/media/tabs_2_off.png')"
-                    // tabThree.style.background = "url('./static/media/tabs_3_off.png')"
-                    // tabFour.style.background = "url('./static/media/tabs_4_off.png')"
-                    // tabFive.style.background = "url('./static/media/tabs_5_on.png')"
                 }
             }
 
@@ -492,11 +469,6 @@
             tabThree.style.border = "7px solid transparent"
             tabFour.style.border = "7px solid transparent"
             tabFive.style.border = "7px solid transparent"
-            // tabOne.style.background = "url('./static/media/tabs_1_on.png')"
-            // tabTwo.style.background = "url('./static/media/tabs_2_off.png')"
-            // tabThree.style.background = "url('./static/media/tabs_3_off.png')"
-            // tabFour.style.background = "url('./static/media/tabs_4_off.png')"
-            // tabFive.style.background = "url('./static/media/tabs_5_off.png')"
         }
         tabTwo.onclick = function(e) {
             sectionTwo.scrollIntoView({ behavior: "auto" })
@@ -505,11 +477,6 @@
             tabThree.style.border = "7px solid transparent"
             tabFour.style.border = "7px solid transparent"
             tabFive.style.border = "7px solid transparent"
-            // tabOne.style.background = "url('./static/media/tabs_1_off.png')"
-            // tabTwo.style.background = "url('./static/media/tabs_2_on.png')"
-            // tabThree.style.background = "url('./static/media/tabs_3_off.png')"
-            // tabFour.style.background = "url('./static/media/tabs_4_off.png')"
-            // tabFive.style.background = "url('./static/media/tabs_5_off.png')"
         }
         tabThree.onclick = function(e) {
             sectionThree.scrollIntoView({ behavior: "auto" })
@@ -518,11 +485,6 @@
             tabThree.style.border = "7px solid"
             tabFour.style.border = "7px solid transparent"
             tabFive.style.border = "7px solid transparent"
-            // tabOne.style.background = "url('./static/media/tabs_1_off.png')"
-            // tabTwo.style.background = "url('./static/media/tabs_2_off.png')"
-            // tabThree.style.background = "url('./static/media/tabs_3_on.png')"
-            // tabFour.style.background = "url('./static/media/tabs_4_off.png')"
-            // tabFive.style.background = "url('./static/media/tabs_5_off.png')"
         }
         tabFour.onclick = function(e) {
             sectionFour.scrollIntoView({ behavior: "auto" })
@@ -531,11 +493,6 @@
             tabThree.style.border = "7px solid transparent"
             tabFour.style.border = "7px solid"
             tabFive.style.border = "7px solid transparent"
-            // tabOne.style.background = "url('./static/media/tabs_1_off.png')"
-            // tabTwo.style.background = "url('./static/media/tabs_2_off.png')"
-            // tabThree.style.background = "url('./static/media/tabs_3_off.png')"
-            // tabFour.style.background = "url('./static/media/tabs_4_on.png')"
-            // tabFive.style.background = "url('./static/media/tabs_5_off.png')"
         }
         tabFive.onclick = function(e) {
             sectionFive.scrollIntoView({ behavior: "auto" })
@@ -544,11 +501,6 @@
             tabThree.style.border = "7px solid transparent"
             tabFour.style.border = "7px solid transparent"
             tabFive.style.border = "7px solid"
-            // tabOne.style.background = "url('./static/media/tabs_1_off.png')"
-            // tabTwo.style.background = "url('./static/media/tabs_2_off.png')"
-            // tabThree.style.background = "url('./static/media/tabs_3_off.png')"
-            // tabFour.style.background = "url('./static/media/tabs_4_off.png')"
-            // tabFive.style.background = "url('./static/media/tabs_5_on.png')"
         }
     </script>
 </body>
