@@ -64,6 +64,13 @@ main {
     bottom: 0;
 }
 
+#mobile-quicklinks{
+    margin-top:20px;
+    margin-bottom:10px;
+    flex-wrap: wrap;
+
+}
+
 .banner-container  {
     width: 100%;
     background-size: cover;
@@ -75,6 +82,34 @@ main {
     width: 100%;
     height: 100%;
     vertical-align: top;
+}
+
+.mint_button {
+    background: url("../media/mint_button_sprite_short.png") ;
+    width: 292px;
+    height: 81px;
+}
+
+.mint_button:hover {
+    background: url("../media/mint_button_sprite_short.png") ;
+    background-position: 0 -79px;
+    width: 292px;
+    height: 81 px;
+    cursor: pointer;
+}
+
+.leaderboard_button {
+    background: url("../media/leaderboard_button_sprite_short.png") ;
+    width: 292px;
+    height: 81px;
+}
+
+.leaderboard_button:hover {
+    background: url("../media/leaderboard_button_sprite_short.png") ;
+    background-position: 0 -79px;
+    width: 292px;
+    height: 81 px;
+    cursor: pointer;
 }
 
 .main-section {
@@ -280,7 +315,6 @@ main {
     width: 100%;
     max-width: 60%;
     height: 68px;
-    margin: 10px;
 }
 
 .ccobanner {
@@ -370,6 +404,10 @@ main {
         display: none;
     }
 
+    #mobile-quicklinks{
+        display: none;
+    }
+
     main {
         display: block;
         height: fit-content;
@@ -404,7 +442,7 @@ main {
     .sticky{
         position: sticky;
         position: -webkit-sticky;
-        top: 0px;
+        top: 1%;
         z-index: 99;
     }
 
@@ -413,11 +451,9 @@ main {
         padding-top: 1%;
         /* padding-bottom: 720px; */
         min-width: 365px;
-        margin: 0px;
-        height: 1500px;
-        width: 365px;
-        border-right: 1px solid black;
-        border-left: 1px solid black;
+        margin: none;
+        /* border-right: 1px solid black;
+        border-left: 1px solid black; */
         justify-content:flex-start;
         display: flex;
         flex-direction: column;
@@ -425,24 +461,40 @@ main {
     }
     
     .left-sidebar {
-        background-image: url('../media/page\ border_left_short2_web.jpg');
+        background-image: url('../media/blue\ border\ left.png');
     }
 
     .right-sidebar {
-        background-image: url('../media/page\ border_right_short2_web.jpg');
-        align-items: center;
-        padding-left: 2%;
+        background-image: url('../media/blue\ border\ right.png');
     }
     
-    #bottom-logo {
+    /* #bottom-logo {
         position: sticky;
         top: 100%;
+    } */
+
+    .tabs-and-yellow-bar{
+        display: flex;
+        flex-direction: row;
+        height: 8%;
+        /* border: 1px solid black; */
+        justify-content:space-between;
+    }
+
+    .tab_container{
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
     }
 
     .socials {
         display: flex;
         justify-content: center;
         width: 100%;
+        margin: 10px;
     }
     
     .socials img {
@@ -562,36 +614,6 @@ main {
             -moz-transform: scale(1.04);
             -o-transform: scale(1.04);
     }
-    
-    .mint_button {
-        background: url("../media/mint_button_sprite.png") ;
-        width: 315px;
-        height: 81px;
-        margin-bottom: 30px;
-    }
-
-    .mint_button:hover {
-        background: url("../media/mint_button_sprite.png") ;
-        background-position: 0 -79px;
-        width: 315px;
-        height: 81 px;
-        cursor: pointer;
-    }
-
-    .leaderboard_button {
-        background: url("../media/leaderboard_button_sprite.png") ;
-        width: 315px;
-        height: 81px;
-        margin-bottom: 30px;
-    }
-
-    .leaderboard_button:hover {
-        background: url("../media/leaderboard_button_sprite.png") ;
-        background-position: 0 -79px;
-        width: 315px;
-        height: 81 px;
-        cursor: pointer;
-    }
 
     .tab {
         cursor: pointer;
@@ -625,13 +647,13 @@ main {
 }
 
 /* for anything bigger that nathan's small screen */
-@media (min-width: 1920px){
+/* @media (min-width: 1920px){
     .left-sidebar {
         padding-bottom: 600px;
         justify-content:space-around;
     }
     .right-sidebar {
-        /* padding-bottom: 600px; */
-        /* justify-content:space-around; */
+        padding-bottom: 600px;
+        justify-content:space-around;
     }
-}
+} */
