@@ -203,7 +203,6 @@ main {
     border: 1px solid black;
 }
 
-
 .section-header img {
     height: 100%;
     width: 100%;
@@ -358,6 +357,7 @@ main {
 #twitter_icon {
     background:url("../media/social icons/social_sprites.png") -136px;
     min-width:68px;
+    background-clip:content-box;
     margin: 0 5px 0 5px;
 }
 
@@ -388,7 +388,7 @@ main {
     }
 }
 
-/*Threshold from tabled to desktop*/
+/*Threshold from tablet to desktop*/
 @media (min-width: 1280px) {
 
 /* #Marquee behavior Desktop */
@@ -466,17 +466,19 @@ main {
 
     .right-sidebar {
         background-image: url('../media/blue\ border\ right.png');
+        justify-content: space-between;
     }
     
-    /* #bottom-logo {
-        position: sticky;
-        top: 100%;
-    } */
+    #bottom-logo {
+        /* position: sticky;
+        top: 100%; */
+        padding-left: 15%;
+    }
 
     .tabs-and-yellow-bar{
         display: flex;
         flex-direction: row;
-        height: 8%;
+        height: 7.5%;
         /* border: 1px solid black; */
         justify-content:space-between;
     }
@@ -494,7 +496,8 @@ main {
         display: flex;
         justify-content: center;
         width: 100%;
-        margin: 10px;
+        margin: 8px;
+        overflow: visible;
     }
     
     .socials img {
@@ -617,43 +620,47 @@ main {
 
     .tab {
         cursor: pointer;
-        height: 125px;
-        width: 310px;
-        margin: 0px 0;
+        height: 12%;
+        width: 305px;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         font-family: opensans-condensed-regular;
         font-size: 1.6em;
+        border: 7px solid transparent;
         color: rgb(255, 247, 211);
         background-repeat: no-repeat;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
+        margin-left: -10px;
     }
 
     #tab-1 {
-        background: url('../media/tabs_1_on.png');
+        /* background: url('../media/tabs_1_on.png'); */
+        background-color: #cd97e7;
     }
     #tab-2 {
-        background: url('../media/tabs_2_off.png');
+        /* background: url('../media/tabs_2_off.png'); */
+        background-color: #efbd4f;
     }
     #tab-3 {
-        background: url('../media/tabs_3_off.png');
+        /* background: url('../media/tabs_3_off.png'); */
+        background-color: #7b8cf3;
     }
     #tab-4 {
-        background: url('../media/tabs_4_off.png');
+        /* background: url('../media/tabs_4_off.png'); */
+        background-color: #66af5e;
     }
     #tab-5 {
-        background: url('../media/tabs_5_off.png');
+        /* background: url('../media/tabs_5_off.png'); */
+        background-color: #dc5741;
     }
 }
 
 /* for anything bigger that nathan's small screen */
-/* @media (min-width: 1920px){
-    .left-sidebar {
-        padding-bottom: 600px;
-        justify-content:space-around;
+@media (min-width: 1800px){
+    .tabs-and-yellow-bar{
+        height: 10%;
     }
-    .right-sidebar {
-        padding-bottom: 600px;
-        justify-content:space-around;
-    }
-} */
+}

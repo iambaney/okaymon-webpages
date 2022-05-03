@@ -16,19 +16,33 @@
                 <div class="sticky tabs-and-yellow-bar">
                     <div class="tab_container">
                         <div class="tab" id="tab-1">
-                            <span>Welcome</span>
+                            <div style="width:75%; text-align:center;">
+                                Welcome
+                            </div>
+                            <img src="./static/media/tabs_1_ball.png" style="height: 85%;">
                         </div>
                         <div class="tab" id="tab-2">
-                            <span>NFTs</span>
-                        </div>
+                            <div style="width:75%; text-align:center;">
+                                NFTs
+                            </div>
+                            <img src="./static/media/tabs_2_ball.png" style="height: 85%;">                        </div>
                         <div class="tab" id="tab-3">
-                            <span>Art</span>
+                            <div style="width:75%; text-align:center;">
+                                Art
+                            </div>
+                            <img src="./static/media/tabs_3_ball.png" style="height: 85%;">
                         </div>
                         <div class="tab" id="tab-4">
-                            <span>Roadmap</span>
+                            <div style="width:75%; text-align:center;">
+                                Roadmap
+                            </div>
+                            <img src="./static/media/tabs_4_ball.png" style="height: 85%;">
                         </div>
                         <div class="tab" id="tab-5">
-                            <span>Team</span>
+                            <div style="width:75%; text-align:center;">
+                                Team
+                            </div>
+                            <img src="./static/media/tabs_5_ball.png" style="height: 85%;">
                         </div>
                     </div>
                     <div>
@@ -39,10 +53,9 @@
             <div class="content">
                 <div class="main-section" id="main-section">
                     <div class="section-header" id="mobile-quicklinks">
-                            <a class="mint_button" href="#" target="_blank" rel="noopener noreferrer"></a>
-                            <a class="leaderboard_button" href="#" target="_blank" rel="noopener noreferrer"></a>
+                        <a class="mint_button" href="#" target="_blank" rel="noopener noreferrer"></a>
+                        <a class="leaderboard_button" href="#" target="_blank" rel="noopener noreferrer"></a>
                     </div>
-
                     <div class="section" id="div-section-1">
                         <div class="section-header" id="section-one">
                             <img src="./static/media/section_background_1.png" />
@@ -340,7 +353,7 @@
                         </div>
                         <div>
                             <a target="_blank" rel="noopener noreferrer">
-                                <img style="opacity: .8; margin: 0px;" src="./static/media/Okayball_blue.png" height="200px" alt="Blue Okayball"/>
+                                <img style="opacity: .8; margin: 0px;" src="./static/media/Okayball_blue.png" height="128px" alt="Blue Okayball"/>
                             </a>
                         </div>
                         <div class="socials">
@@ -348,10 +361,13 @@
                             <a class="btn-img" id="twitter_icon" href="https://twitter.com/OkaymonNFT" target="_blank" rel="noopener nereferrer" alt="Follow us on Twitter"></a>
                             <!-- <a class="btn-img" id="opensea_icon" href="https://opensea.io/collection/okaymon-gen-0" target="_blank" rel="noopener nereferrer" alt="View the collection"></a> -->
                         </div>
-                        <div id="bottom-logo">
+                        <!-- <div>
                             <img src="./static/media/logo_small.png" alt="Okaymon logo">
-                        </div>
+                        </div> -->
                     </div>
+                </div>
+                <div>
+                    <img id="bottom-logo" src="./static/media/logo_small.png" alt="Okaymon logo">
                 </div>
             </div>
         </div>
@@ -405,39 +421,64 @@
             if (lastId !== id) {
                 lastId = id
                 if (lastId == "div-section-1") {
-                    tabOne.style.background = "url('./static/media/tabs_1_on.png')"
-                    tabTwo.style.background = "url('./static/media/tabs_2_off.png')"
-                    tabThree.style.background = "url('./static/media/tabs_3_off.png')"
-                    tabFour.style.background = "url('./static/media/tabs_4_off.png')"
-                    tabFive.style.background = "url('./static/media/tabs_5_off.png')"
+                    tabOne.style.border = "7px solid"
+                    tabTwo.style.border = "7px solid transparent"
+                    tabThree.style.border = "7px solid transparent"
+                    tabFour.style.border = "7px solid transparent"
+                    tabFive.style.border = "7px solid transparent"
+                    // tabOne.style.background = "url('./static/media/tabs_1_on.png')"
+                    // tabTwo.style.background = "url('./static/media/tabs_2_off.png')"
+                    // tabThree.style.background = "url('./static/media/tabs_3_off.png')"
+                    // tabFour.style.background = "url('./static/media/tabs_4_off.png')"
+                    // tabFive.style.background = "url('./static/media/tabs_5_off.png')"
                 }
                 else if (lastId == "div-section-2") {
-                    tabOne.style.background = "url('./static/media/tabs_1_off.png')"
-                    tabTwo.style.background = "url('./static/media/tabs_2_on.png')"
-                    tabThree.style.background = "url('./static/media/tabs_3_off.png')"
-                    tabFour.style.background = "url('./static/media/tabs_4_off.png')"
-                    tabFive.style.background = "url('./static/media/tabs_5_off.png')"
+                    tabOne.style.border = "7px solid transparent"
+                    tabTwo.style.border = "7px solid"
+                    tabThree.style.border = "7px solid transparent"
+                    tabFour.style.border = "7px solid transparent"
+                    tabFive.style.border = "7px solid transparent"
+                    // tabOne.style.background = "url('./static/media/tabs_1_off.png')"
+                    // tabTwo.style.background = "url('./static/media/tabs_2_on.png')"
+                    // tabThree.style.background = "url('./static/media/tabs_3_off.png')"
+                    // tabFour.style.background = "url('./static/media/tabs_4_off.png')"
+                    // tabFive.style.background = "url('./static/media/tabs_5_off.png')"
                 }
                 else if (lastId == "div-section-3") {
-                    tabOne.style.background = "url('./static/media/tabs_1_off.png')"
-                    tabTwo.style.background = "url('./static/media/tabs_2_off.png')"
-                    tabThree.style.background = "url('./static/media/tabs_3_on.png')"
-                    tabFour.style.background = "url('./static/media/tabs_4_off.png')"
-                    tabFive.style.background = "url('./static/media/tabs_5_off.png')"
+                    tabOne.style.border = "7px solid transparent"
+                    tabTwo.style.border = "7px solid transparent"
+                    tabThree.style.border = "7px solid"
+                    tabFour.style.border = "7px solid transparent"
+                    tabFive.style.border = "7px solid transparent"
+                    // tabOne.style.background = "url('./static/media/tabs_1_off.png')"
+                    // tabTwo.style.background = "url('./static/media/tabs_2_off.png')"
+                    // tabThree.style.background = "url('./static/media/tabs_3_on.png')"
+                    // tabFour.style.background = "url('./static/media/tabs_4_off.png')"
+                    // tabFive.style.background = "url('./static/media/tabs_5_off.png')"
                 }
                 else if (lastId == "div-section-4") {
-                    tabOne.style.background = "url('./static/media/tabs_1_off.png')"
-                    tabTwo.style.background = "url('./static/media/tabs_2_off.png')"
-                    tabThree.style.background = "url('./static/media/tabs_3_off.png')"
-                    tabFour.style.background = "url('./static/media/tabs_4_on.png')"
-                    tabFive.style.background = "url('./static/media/tabs_5_off.png')"
+                    tabOne.style.border = "7px solid transparent"
+                    tabTwo.style.border = "7px solid transparent"
+                    tabThree.style.border = "7px solid transparent"
+                    tabFour.style.border = "7px solid"
+                    tabFive.style.border = "7px solid transparent"
+                    // tabOne.style.background = "url('./static/media/tabs_1_off.png')"
+                    // tabTwo.style.background = "url('./static/media/tabs_2_off.png')"
+                    // tabThree.style.background = "url('./static/media/tabs_3_off.png')"
+                    // tabFour.style.background = "url('./static/media/tabs_4_on.png')"
+                    // tabFive.style.background = "url('./static/media/tabs_5_off.png')"
                 }
                 else if (lastId == "div-section-5") {
-                    tabOne.style.background = "url('./static/media/tabs_1_off.png')"
-                    tabTwo.style.background = "url('./static/media/tabs_2_off.png')"
-                    tabThree.style.background = "url('./static/media/tabs_3_off.png')"
-                    tabFour.style.background = "url('./static/media/tabs_4_off.png')"
-                    tabFive.style.background = "url('./static/media/tabs_5_on.png')"
+                    tabOne.style.border = "7px solid transparent"
+                    tabTwo.style.border = "7px solid transparent"
+                    tabThree.style.border = "7px solid transparent"
+                    tabFour.style.border = "7px solid transparent"
+                    tabFive.style.border = "7px solid"
+                    // tabOne.style.background = "url('./static/media/tabs_1_off.png')"
+                    // tabTwo.style.background = "url('./static/media/tabs_2_off.png')"
+                    // tabThree.style.background = "url('./static/media/tabs_3_off.png')"
+                    // tabFour.style.background = "url('./static/media/tabs_4_off.png')"
+                    // tabFive.style.background = "url('./static/media/tabs_5_on.png')"
                 }
             }
 
@@ -445,43 +486,69 @@
 
         tabOne.onclick = function(e) {
             sectionOne.scrollIntoView({ behavior: "auto" })
-            tabOne.style.background = "url('./static/media/tabs_1_on.png')"
-            tabTwo.style.background = "url('./static/media/tabs_2_off.png')"
-            tabThree.style.background = "url('./static/media/tabs_3_off.png')"
-            tabFour.style.background = "url('./static/media/tabs_4_off.png')"
-            tabFive.style.background = "url('./static/media/tabs_5_off.png')"
+            
+            tabOne.style.border = "7px solid"
+            tabTwo.style.border = "7px solid transparent"
+            tabThree.style.border = "7px solid transparent"
+            tabFour.style.border = "7px solid transparent"
+            tabFive.style.border = "7px solid transparent"
+            // tabOne.style.background = "url('./static/media/tabs_1_on.png')"
+            // tabTwo.style.background = "url('./static/media/tabs_2_off.png')"
+            // tabThree.style.background = "url('./static/media/tabs_3_off.png')"
+            // tabFour.style.background = "url('./static/media/tabs_4_off.png')"
+            // tabFive.style.background = "url('./static/media/tabs_5_off.png')"
         }
         tabTwo.onclick = function(e) {
             sectionTwo.scrollIntoView({ behavior: "auto" })
-            tabOne.style.background = "url('./static/media/tabs_1_off.png')"
-            tabTwo.style.background = "url('./static/media/tabs_2_on.png')"
-            tabThree.style.background = "url('./static/media/tabs_3_off.png')"
-            tabFour.style.background = "url('./static/media/tabs_4_off.png')"
-            tabFive.style.background = "url('./static/media/tabs_5_off.png')"
+            tabOne.style.border = "7px solid transparent"
+            tabTwo.style.border = "7px solid"
+            tabThree.style.border = "7px solid transparent"
+            tabFour.style.border = "7px solid transparent"
+            tabFive.style.border = "7px solid transparent"
+            // tabOne.style.background = "url('./static/media/tabs_1_off.png')"
+            // tabTwo.style.background = "url('./static/media/tabs_2_on.png')"
+            // tabThree.style.background = "url('./static/media/tabs_3_off.png')"
+            // tabFour.style.background = "url('./static/media/tabs_4_off.png')"
+            // tabFive.style.background = "url('./static/media/tabs_5_off.png')"
         }
         tabThree.onclick = function(e) {
             sectionThree.scrollIntoView({ behavior: "auto" })
-            tabOne.style.background = "url('./static/media/tabs_1_off.png')"
-            tabTwo.style.background = "url('./static/media/tabs_2_off.png')"
-            tabThree.style.background = "url('./static/media/tabs_3_on.png')"
-            tabFour.style.background = "url('./static/media/tabs_4_off.png')"
-            tabFive.style.background = "url('./static/media/tabs_5_off.png')"
+            tabOne.style.border = "7px solid transparent"
+            tabTwo.style.border = "7px solid transparent"
+            tabThree.style.border = "7px solid"
+            tabFour.style.border = "7px solid transparent"
+            tabFive.style.border = "7px solid transparent"
+            // tabOne.style.background = "url('./static/media/tabs_1_off.png')"
+            // tabTwo.style.background = "url('./static/media/tabs_2_off.png')"
+            // tabThree.style.background = "url('./static/media/tabs_3_on.png')"
+            // tabFour.style.background = "url('./static/media/tabs_4_off.png')"
+            // tabFive.style.background = "url('./static/media/tabs_5_off.png')"
         }
         tabFour.onclick = function(e) {
             sectionFour.scrollIntoView({ behavior: "auto" })
-            tabOne.style.background = "url('./static/media/tabs_1_off.png')"
-            tabTwo.style.background = "url('./static/media/tabs_2_off.png')"
-            tabThree.style.background = "url('./static/media/tabs_3_off.png')"
-            tabFour.style.background = "url('./static/media/tabs_4_on.png')"
-            tabFive.style.background = "url('./static/media/tabs_5_off.png')"
+            tabOne.style.border = "7px solid transparent"
+            tabTwo.style.border = "7px solid transparent"
+            tabThree.style.border = "7px solid transparent"
+            tabFour.style.border = "7px solid"
+            tabFive.style.border = "7px solid transparent"
+            // tabOne.style.background = "url('./static/media/tabs_1_off.png')"
+            // tabTwo.style.background = "url('./static/media/tabs_2_off.png')"
+            // tabThree.style.background = "url('./static/media/tabs_3_off.png')"
+            // tabFour.style.background = "url('./static/media/tabs_4_on.png')"
+            // tabFive.style.background = "url('./static/media/tabs_5_off.png')"
         }
         tabFive.onclick = function(e) {
             sectionFive.scrollIntoView({ behavior: "auto" })
-            tabOne.style.background = "url('./static/media/tabs_1_off.png')"
-            tabTwo.style.background = "url('./static/media/tabs_2_off.png')"
-            tabThree.style.background = "url('./static/media/tabs_3_off.png')"
-            tabFour.style.background = "url('./static/media/tabs_4_off.png')"
-            tabFive.style.background = "url('./static/media/tabs_5_on.png')"
+            tabOne.style.border = "7px solid transparent"
+            tabTwo.style.border = "7px solid transparent"
+            tabThree.style.border = "7px solid transparent"
+            tabFour.style.border = "7px solid transparent"
+            tabFive.style.border = "7px solid"
+            // tabOne.style.background = "url('./static/media/tabs_1_off.png')"
+            // tabTwo.style.background = "url('./static/media/tabs_2_off.png')"
+            // tabThree.style.background = "url('./static/media/tabs_3_off.png')"
+            // tabFour.style.background = "url('./static/media/tabs_4_off.png')"
+            // tabFive.style.background = "url('./static/media/tabs_5_on.png')"
         }
     </script>
 </body>
