@@ -19,7 +19,7 @@
                             <div style="width:75%; text-align:center;">
                                 Welcome
                             </div>
-                            <img src="./static/media/tabs_1_ball.png" style="height: 85%;">
+                                <img src="./static/media/tabs_1_ball.png" style="height: 85%;">
                         </div>
                         <div class="tab" id="tab-2">
                             <div style="width:75%; text-align:center;">
@@ -357,7 +357,7 @@
                         </div>
                         <div>
                             <a target="_blank" rel="noopener noreferrer">
-                                <img style="opacity: .8; margin: 0px;" src="./static/media/Okayball_blue.png" height="128px" alt="Blue Okayball"/>
+                                <img style="opacity: .8; margin: 0px;" src="./static/media/Okayball_blue.png" height="200px" alt="Blue Okayball"/>
                             </a>
                         </div>
                         <div class="socials">
@@ -413,14 +413,39 @@
         }
 
         let lastId
-        mainSection.onscroll = function(e) {
-            console.log("4")
-            let fromTop = this.scrollTop /* + banner.offsetHeight + 200 /*+200 is so tab highlighting follows page position*/
-            let cur = itemsArray.filter(function(item) {
-                if (item.offsetTop < fromTop) {
-                    return item
+
+        //backup
+        // mainSection.onscroll = function(e) {
+        //     let fromTop = this.scrollTop /* + banner.offsetHeight + 200 /*+200 is so tab highlighting follows page position*/
+        //     let cur = itemsArray.filter(function(item) {
+        //         if (item.offsetTop < fromTop) {
+        //             return item
+        //         }
+        //     })
+
+        window.onscroll = function() {
+            let fromTop = Math.round(window.pageYOffset+window.innerHeight) //total height of page
+            let sectionPos = Math.round(document.getElementById('section-three').offsetTop + banner.offsetHeight) //section psotion on screen, banner height considered
+            console.log(fromTop)
+            console.log(banner.offsetHeight)
+            if (fromTop >= sectionPos) {
+                    tabOne.style.border = "7px solid transparent"
+                    tabTwo.style.border = "7px solid transparent"
+                    tabThree.style.border = "7px solid"
+                    tabFour.style.border = "7px solid transparent"
+                    tabFive.style.border = "7px solid transparent"
                 }
+            // bottom listener:
+            // if (fromTop >= document.body.scrollHeight) {
+            //     console.log("At the bottom!")
+            // }
+        }
+
+        scrollItems.onscroll = function(e) {
+            console.log("4")
+            let cur = itemsArray.filter(function(item) {
             })
+
             let item = cur[cur.length - 1]
             let id = item.id
             if (lastId !== id) {

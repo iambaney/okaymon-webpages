@@ -480,7 +480,7 @@ main {
     .tabs-and-yellow-bar{
         display: flex;
         flex-direction: row;
-        height: 7.5%;
+        height: 7%;
         /* border: 1px solid black; */
         justify-content:space-between;
     }
