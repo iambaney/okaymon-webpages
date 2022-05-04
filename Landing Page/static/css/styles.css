@@ -43,6 +43,7 @@ main {
     display: flex;
     flex-direction: column;
 }
+
 .content {
     /* overflow-y: scroll; */
     flex: 1;
@@ -85,13 +86,13 @@ main {
 }
 
 .mint_button {
-    background: url("../media/mint_button_sprite_short.png") ;
+    background: url("../media/mint_button_sprite_soon.png") ;
     width: 292px;
     height: 81px;
 }
 
 .mint_button:hover {
-    background: url("../media/mint_button_sprite_short.png") ;
+    background: url("../media/mint_button_sprite_soon.png") ;
     background-position: 0 -79px;
     width: 292px;
     height: 81 px;
@@ -99,13 +100,13 @@ main {
 }
 
 .leaderboard_button {
-    background: url("../media/leaderboard_button_sprite_short.png") ;
+    background: url("../media/leaderboard_button_sprite_soon.png") ;
     width: 292px;
     height: 81px;
 }
 
 .leaderboard_button:hover {
-    background: url("../media/leaderboard_button_sprite_short.png") ;
+    background: url("../media/leaderboard_button_sprite_soon.png") ;
     background-position: 0 -79px;
     width: 292px;
     height: 81 px;
@@ -125,7 +126,7 @@ main {
 }
 
 .left-sidebar, .right-sidebar {
-    display: none;
+    display:none;
 }
 
 .section {
@@ -280,28 +281,29 @@ main {
 }
 
 .table-contents {
-    background-color: rgba(255, 255, 255, 0.7);
-    min-width: 250px;
+    display: flex;
+    min-width: 256px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-spacing:10%;
     width: 100%;
-    border: none;
     margin: 10px 0 10px 0;
-    border-radius: 5px;
-    /* border-top: 1px solid; */
+    /* border: #7b8cf3 solid 4px; */
+    border-radius: 10px;
     text-align: center;
     font-family: opensans-condensed-regular;
     font-size: 1.25em;
     color: rgb(61, 59, 52);
     justify-content: center;
-    padding-left: 4px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
 }
 
-.table-contents td, h2{
-    border: 0px solid;
-    padding: 4px;
+.table-contents td, h2 tr{
+    /* border: #66af5e solid 3px; */
+    width: 350px;
+    height: 50px;
     font-family: opensans-condensed-bold;
-
 }
+
 
 .bold-red {
     color: rgb(255, 68, 68);
@@ -331,7 +333,7 @@ main {
 }
 
 #roadmap {
-    background-image: url("../media/map_v2_small.png");
+    background-image: url("../media/map_v2_small_web.jpg");
     background-repeat: repeat;
     background-size: 85%;
     background-position-x: center;

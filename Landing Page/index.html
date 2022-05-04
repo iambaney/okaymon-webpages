@@ -77,7 +77,7 @@
                                 <span class="bold-red">Professor Okay</span> is convinced these creatures, which he calls <span class="bold-red">Okaymon</span>, hold the answers to the mysteries of the <span class="bold-red">Okayverse</span>.
                             </p>
                             <p>
-                                <img style="min-width: 200px; width: 60%;" src="./static/media/okayyako4_web.jpg" alt="Barry Okay and Koko Yako after recieving their Okayball research grant" />
+                                <img style="min-width: 200px; width: 60%; border-radius:2%;" src="./static/media/okayyako4_web.jpg" alt="Barry Okay and Koko Yako after recieving their Okayball research grant" />
                             </p>
                                 <figcaption><i>Professor Okay (left) and Dr. Yako in the lab.</i></figcaption>
                             <p>
@@ -113,14 +113,14 @@
                             <p><i>Learn more about our gamified drop by reading <a class="btn-img" href="./players_guide.html" rel="noopener noreferrer">The Official Okaymon Player's Guide</a></i></p>
                             <p>
                                 <a href="./players_guide.html" rel="noopener noreferrer">
-                                    <img class="btn-img" style="min-width: 200px; width: 60%;" src="./static/media/Players manual_thumbnail_web.jpg" alt="Okaymon Player's Guide" />
+                                    <img class="btn-img" style="min-width: 200px; width: 60%; border-radius:2%;" src="./static/media/Players manual_thumbnail_web.jpg" alt="Okaymon Player's Guide" />
                                 </a>
                             </p>
                             <p>
                                 In brief, the collection is released over <span class="bold-red">5 themed Generations of 2,000 Okaymon each.</span> The first Generation is <i>Oasis</i>.
                             </p>
                             <p>
-                                <img style="min-width: 200px; width: 60%;" src="./static/media/Oasis Booster Ad_small_web.jpg" alt="Generation 1: Oasis. 2000 unique monsters" />
+                                <img style="min-width: 200px; width: 60%; border-radius:2%;" src="./static/media/Oasis Booster Ad_small_web.jpg" alt="Generation 1: Oasis. 2000 unique monsters" />
                             </p>
                             <p>
                                 You mint Okayballs for .05 ETH each.
@@ -155,7 +155,7 @@
                                 None of our images are drawn or designed by people; <i>they're 100% machine dream!</i>
                             </p>
                             <p>
-                                <video style="min-width: 200px" width="60%" autoplay muted loop alt="The birth of an Okaymon">
+                                <video style="min-width: 200px; border-radius:2%;" width="60%" autoplay muted loop alt="The birth of an Okaymon">
                                     <source src="./static/media/Starters Ganimation 10Secs_web.mp4" type="video/mp4">
                                     <source src="./static/media/Starters Ganimation 10Secs_web.webm" type="video/webm">
                                     <source src="./static/media/Starters Ganimation 10Secs_web.ogv" type='video/ogg; codecs="theora, vorbis"'>
@@ -203,7 +203,9 @@
                             <h1>Adventure awaits!</h1>
                             <div class="section-body" id="roadmap">
                                 <table class="table-contents">
-                                    <tr><th><h2>1.0</h2></th></tr>
+                                    <tr>
+                                        <td colspan="2"><h2>1.0</h2></td>
+                                    </tr>
                                     <tr>
                                         <td>Generation 1:</td>
                                         <td style="text-align: center;"><img style="height: 100px;" src="./static/media/Oasis_logo_icon_100px.png" alt="Oasis logo icon" /></td>
@@ -227,7 +229,9 @@
                                 </table>
                             <br>
                                 <table class="table-contents">
-                                    <tr><th><h2>2.0</h2></th></tr>
+                                    <tr>
+                                        <td colspan="2"><h2>2.0</h2></td>
+                                    </tr>
                                     <tr>
                                         <td>• AI Multimedia Expansion of Okaymon Lore</td>
                                     </tr>
@@ -252,7 +256,7 @@
                         <div class="section-body">
                             <h1>Who are we?</h1>
                             <p>
-                                <img style="min-width: 200px; width: 60%;" src="./static/media/team_portrait_for_NFT_news_2_web.jpg" alt="The Okaymon Team" />
+                                <img style="min-width: 200px; width: 60%; border-radius:2%;" src="./static/media/team_portrait_for_NFT_news_2_web.jpg" alt="The Okaymon Team" />
                             </p>
                             <div class="bios_layout">
                                 <div class="float_pfp">
@@ -342,7 +346,7 @@
             <div class="right-sidebar">
                 <div class="sticky tabs-and-yellow-bar">
                     <div>
-                        <img src="./static/media/yellow border right.png" height="100%">
+                        <img src="./static/media/yellow border right.png" style="height:100%;">
                     </div>
                     <div class="tab_container" style="padding-right: 5%;">
                         <div class="mint_button">
@@ -400,8 +404,7 @@
 
         const tabs = document.getElementsByClassName('tab')
         const scrollItems = document.getElementsByClassName('section')
-        const mainSection = document.getElementsByClassName('right-sidebar')[0]
-        // const mainSection = document.getElementsByClassName('main-section')[0]
+        const mainSection = document.getElementsByClassName('main-section')[0]
         const banner = document.getElementsByClassName('banner-container')[0]
 
         let itemsArray = []
