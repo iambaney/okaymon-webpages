@@ -412,7 +412,7 @@
             itemsArray.push(item)
         }
 
-        let lastId
+        // let lastId
 
         //backup
         // mainSection.onscroll = function(e) {
@@ -424,70 +424,108 @@
         //     })
 
         window.onscroll = function() {
-            let fromTop = Math.round(window.pageYOffset+window.innerHeight) //total height of page
-            let sectionPos = Math.round(document.getElementById('section-three').offsetTop + banner.offsetHeight) //section psotion on screen, banner height considered
-            console.log(fromTop)
-            console.log(banner.offsetHeight)
-            if (fromTop >= sectionPos) {
-                    tabOne.style.border = "7px solid transparent"
-                    tabTwo.style.border = "7px solid transparent"
-                    tabThree.style.border = "7px solid"
-                    tabFour.style.border = "7px solid transparent"
-                    tabFive.style.border = "7px solid transparent"
-                }
+            let fromTop = Math.round(window.pageYOffset+banner.offsetHeight) //Current position. Pixel distance from bottom of banner
+            let UXoffset = Math.round(banner.offsetHeight*.3) //ux convenience for when the tabs actually visibly switch dependent on variable banner size
+            let section1pos = Math.round(sectionOne.offsetTop + banner.offsetHeight - UXoffset)
+            let section2pos = Math.round(sectionTwo.offsetTop + banner.offsetHeight - UXoffset)
+            let section3pos = Math.round(sectionThree.offsetTop + banner.offsetHeight - UXoffset)
+            let section4pos = Math.round(sectionFour.offsetTop + banner.offsetHeight - UXoffset)
+            let section5pos = Math.round(sectionFive.offsetTop + banner.offsetHeight - UXoffset)
+
+            if (fromTop<section2pos){
+                tabOne.style.border = "7px solid"
+                tabTwo.style.border = "7px solid transparent"
+                tabThree.style.border = "7px solid transparent"
+                tabFour.style.border = "7px solid transparent"
+                tabFive.style.border = "7px solid transparent"
+            }
+
+            else if (fromTop>=section2pos && fromTop<section3pos){
+                tabOne.style.border = "7px solid transparent"
+                tabTwo.style.border = "7px solid"
+                tabThree.style.border = "7px solid transparent"
+                tabFour.style.border = "7px solid transparent"
+                tabFive.style.border = "7px solid transparent"
+            }
+
+            if (fromTop>=section3pos && fromTop<section4pos){
+                tabOne.style.border = "7px solid transparent"
+                tabTwo.style.border = "7px solid transparent"
+                tabThree.style.border = "7px solid"
+                tabFour.style.border = "7px solid transparent"
+                tabFive.style.border = "7px solid transparent"
+            }
+
+            if (fromTop>=section4pos && fromTop<section5pos){
+                tabOne.style.border = "7px solid transparent"
+                tabTwo.style.border = "7px solid transparent"
+                tabThree.style.border = "7px solid transparent"
+                tabFour.style.border = "7px solid"
+                tabFive.style.border = "7px solid transparent"
+            }
+
+            if (fromTop>=section5pos){
+                console.log("You're inside section 5!")
+                tabOne.style.border = "7px solid transparent"
+                tabTwo.style.border = "7px solid transparent"
+                tabThree.style.border = "7px solid transparent"
+                tabFour.style.border = "7px solid transparent"
+                tabFive.style.border = "7px solid"
+            }
+
             // bottom listener:
-            // if (fromTop >= document.body.scrollHeight) {
+            // if (Math.round(fromTop) >= document.body.scrollHeight) {
             //     console.log("At the bottom!")
             // }
         }
 
-        scrollItems.onscroll = function(e) {
-            console.log("4")
-            let cur = itemsArray.filter(function(item) {
-            })
+        // scrollItems.onscroll = function(e) {
+        //     console.log("4")
+        //     let cur = itemsArray.filter(function(item) {
+        //     })
 
-            let item = cur[cur.length - 1]
-            let id = item.id
-            if (lastId !== id) {
-                lastId = id
-                if (lastId == "div-section-1") {
-                    tabOne.style.border = "7px solid"
-                    tabTwo.style.border = "7px solid transparent"
-                    tabThree.style.border = "7px solid transparent"
-                    tabFour.style.border = "7px solid transparent"
-                    tabFive.style.border = "7px solid transparent"
-                }
-                else if (lastId == "div-section-2") {
-                    tabOne.style.border = "7px solid transparent"
-                    tabTwo.style.border = "7px solid"
-                    tabThree.style.border = "7px solid transparent"
-                    tabFour.style.border = "7px solid transparent"
-                    tabFive.style.border = "7px solid transparent"
-                }
-                else if (lastId == "div-section-3") {
-                    tabOne.style.border = "7px solid transparent"
-                    tabTwo.style.border = "7px solid transparent"
-                    tabThree.style.border = "7px solid"
-                    tabFour.style.border = "7px solid transparent"
-                    tabFive.style.border = "7px solid transparent"
-                }
-                else if (lastId == "div-section-4") {
-                    tabOne.style.border = "7px solid transparent"
-                    tabTwo.style.border = "7px solid transparent"
-                    tabThree.style.border = "7px solid transparent"
-                    tabFour.style.border = "7px solid"
-                    tabFive.style.border = "7px solid transparent"
-                }
-                else if (lastId == "div-section-5") {
-                    tabOne.style.border = "7px solid transparent"
-                    tabTwo.style.border = "7px solid transparent"
-                    tabThree.style.border = "7px solid transparent"
-                    tabFour.style.border = "7px solid transparent"
-                    tabFive.style.border = "7px solid"
-                }
-            }
+        //     let item = cur[cur.length - 1]
+        //     let id = item.id
+        //     if (lastId !== id) {
+        //         lastId = id
+        //         if (lastId == "div-section-1") {
+        //             tabOne.style.border = "7px solid"
+        //             tabTwo.style.border = "7px solid transparent"
+        //             tabThree.style.border = "7px solid transparent"
+        //             tabFour.style.border = "7px solid transparent"
+        //             tabFive.style.border = "7px solid transparent"
+        //         }
+        //         else if (lastId == "div-section-2") {
+        //             tabOne.style.border = "7px solid transparent"
+        //             tabTwo.style.border = "7px solid"
+        //             tabThree.style.border = "7px solid transparent"
+        //             tabFour.style.border = "7px solid transparent"
+        //             tabFive.style.border = "7px solid transparent"
+        //         }
+        //         else if (lastId == "div-section-3") {
+        //             tabOne.style.border = "7px solid transparent"
+        //             tabTwo.style.border = "7px solid transparent"
+        //             tabThree.style.border = "7px solid"
+        //             tabFour.style.border = "7px solid transparent"
+        //             tabFive.style.border = "7px solid transparent"
+        //         }
+        //         else if (lastId == "div-section-4") {
+        //             tabOne.style.border = "7px solid transparent"
+        //             tabTwo.style.border = "7px solid transparent"
+        //             tabThree.style.border = "7px solid transparent"
+        //             tabFour.style.border = "7px solid"
+        //             tabFive.style.border = "7px solid transparent"
+        //         }
+        //         else if (lastId == "div-section-5") {
+        //             tabOne.style.border = "7px solid transparent"
+        //             tabTwo.style.border = "7px solid transparent"
+        //             tabThree.style.border = "7px solid transparent"
+        //             tabFour.style.border = "7px solid transparent"
+        //             tabFive.style.border = "7px solid"
+        //         }
+        //     }
 
-        }
+        // }
 
         tabOne.onclick = function(e) {
             sectionOne.scrollIntoView({ behavior: "auto" })
