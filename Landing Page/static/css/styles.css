@@ -95,6 +95,14 @@ main {
     cursor: pointer;
 }
 
+.mint_button:active {
+    background: url("../media/mint_button_sprite_soon.png") ;
+    background-position: 0 -79px;
+    width: 292px;
+    height: 81 px;
+    cursor: pointer;
+}
+
 .leaderboard_button {
     background: url("../media/leaderboard_button_sprite_soon.png") ;
     width: 292px;
@@ -102,6 +110,14 @@ main {
 }
 
 .leaderboard_button:hover {
+    background: url("../media/leaderboard_button_sprite_soon.png") ;
+    background-position: 0 -79px;
+    width: 292px;
+    height: 81 px;
+    cursor: pointer;
+}
+
+.leaderboard_button:active {
     background: url("../media/leaderboard_button_sprite_soon.png") ;
     background-position: 0 -79px;
     width: 292px;
