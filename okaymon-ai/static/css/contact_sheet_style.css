@@ -16,8 +16,8 @@ body {
     background-repeat: repeat;
     overflow: visible;
     background-color: rgb(61, 59, 52);
-    /* background-image: url("../media/blue\ border\ left_web.jpg"); */
-    background-image: url("../media/Poster_v2_web.jpg");
+    background-image: url("../media/blue\ border\ left_web.jpg");
+    /* background-image: url("../media/Poster_v2_web.jpg"); */
     /* background-image: url("../media/background_repeat_web.jpg"); */
 }
 
@@ -32,6 +32,7 @@ body {
 .header img{
     margin:-1%;
     margin-top: 0;
+    min-width: 256px;
 }
 
 .main-area {
@@ -48,6 +49,7 @@ body {
     align-items: center;
     margin:10%;
     margin-top: 0%;
+    min-width: 1280px;
 }
 .page img{
     margin: 1%;
@@ -78,17 +80,18 @@ body {
 .socials img {
     margin: 0 10px;
 }
-
-.img-magnifier-container {
-    position: relative;
-  }
-  
-.img-magnifier-glass {
-    position: absolute;
-    border: 3px solid rgb(72, 75, 238);
-    border-radius: 10%;
-    cursor: crosshair;
-    /*Set the size of the magnifier glass:*/
-    width: 384px;
-    height: 384px;
+@media (min-width:1280px){
+    .img-magnifier-container {
+        position: relative;
+      }
+      
+    .img-magnifier-glass {
+        position: absolute;
+        border: 3px solid rgb(72, 75, 238);
+        border-radius: 10%;
+        cursor: crosshair;
+        /*Set the size of the magnifier glass:*/
+        width: 384px;
+        height: 384px;
+    }
 }
