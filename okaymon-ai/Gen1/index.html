@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh">
     <title>Generation 1: Oasis</title>
     <link rel="stylesheet" href="../static/css/contact_sheet_style.css">
     <link rel="icon" type="image/x-icon" href="../static/media/favicon_okayball_purple.png">
 </head>
-<body >
+<body>
     <div class="header">
         <!-- <img src="../static/media/okaymon logo_v5 color_web.png" width="40%"> -->
-        <!-- <img src="../static/media/okayball_sugimori_Gen1_RGBA_icon.png" height="128px"> -->
-        <img style="filter: hue-rotate(0deg) brightness(100%);" src="./media/Oasis logo_glow_web.png" width="15%">
-        <!-- <img src="../static/media/okayball_sugimori_Gen1_RGBA_icon.png" height="128px"> -->
+        <img src="./media/Oasis logo_glow_web.png" width="15%">
     </div>
     <div class="main-area">
         <div class="page img-magnifier-container">
-            <img id="gen1" style="width: 100%;" src="../Gen1/media/Gen_1_Contact_Sheet_128_compressed.jpg" alt="" >
+            <img id="gen1" style="width: 100%;" src="./media/Gen_1_Contact_Sheet_25x80_web.jpg" alt="">
         </div>
         <!-- <div class="nav-footer">
             <div class="socials">
@@ -35,7 +34,27 @@
             </div>
         </div> -->
     </div>
-    <script src="./js/magnify.js"></script>
-    <script> magnify("gen1", 4);</script>
+    <div class="header">
+        <img src="../static/media/okaymon logo_v5 color_web.png" width="40%">
+    </div>
+<script src="./js/magnify.js"></script>
+<script>
+    function isMobile() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+
+    if (!isMobile()) {
+        window.onload = function() {
+        magnify("gen1", 2);
+    }
+
+
+// trigger page reload after full load
+//     if(!window.location.hash) {
+//         window.location = window.location + '#loaded';
+//         window.location.reload();
+//     }
+}
+</script>
 </body>
 </html>
