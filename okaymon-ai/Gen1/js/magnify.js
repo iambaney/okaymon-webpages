@@ -17,6 +17,9 @@ function magnify(imgID, zoom) {
     w = glass.offsetWidth/2;
     h = glass.offsetHeight/2;
   
+    /*Anthony Add: Execute a function when someone scrolls. does not work: */
+    window.addEventListener("scroll", moveMagnifier);
+
     /* Execute a function when someone moves the magnifier glass over the image: */
     glass.addEventListener("mousemove", moveMagnifier);
     img.addEventListener("mousemove", moveMagnifier);
@@ -24,10 +27,15 @@ function magnify(imgID, zoom) {
     /*and also for touch screens:*/
     glass.addEventListener("touchmove", moveMagnifier);
     img.addEventListener("touchmove", moveMagnifier);
+
+    function report(e){
+      console.log("it's happening!")
+    }
+
     function moveMagnifier(e) {
       var pos, x, y;
       /* Prevent any other actions that may occur when moving over the image */
-      e.preventDefault();
+      // e.preventDefault();
       /* Get the cursor's x and y positions: */
       pos = getCursorPos(e);
       x = pos.x;
