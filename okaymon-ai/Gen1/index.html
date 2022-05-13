@@ -9,53 +9,50 @@
     <link rel="icon" type="image/x-icon" href="../static/media/favicon_okayball_purple.png">
 </head>
 <body>
-    <div class="header">
-        <!-- <img src="../static/media/okaymon logo_v5 color_web.png" width="40%"> -->
-        <img src="./media/Oasis logo_glow_web.png" width="30%">
+    <div class="load-img" id="load-img">
+        <p><img src="../static/media/Gen_1_Okayball_sprite_gif_v3_web.gif" alt=""></p>
+        <p>LOADING...</p>
     </div>
-    <div class="main-area">
+    <div class="main-area" id="main-area">
+        <div class="header">
+            <img id="oasisLogo" src="./media/Oasis logo_glow_web.png" width="30%">
+        </div>
         <div class="page img-magnifier-container">
-            <img id="sheet-desktop" style="width: 100%;" src="./media/Gen_1_Contact_Sheet_40x50_web.jpg" alt="">
+            <img id="sheet-desktop" style="width: 100%; opacity:100%;" src="./media/Gen_1_Contact_Sheet_40x50_web.jpg" alt="">
             <img id="sheet-mobile" style="width: 100%;" src="./media/Gen_1_Contact_Sheet_20x100_web.jpg" alt="">
         </div>
-        <!-- <div class="nav-footer">
-            <div class="socials">
-                          <a href="https://opensea.io/collection/okaymon-gen-0" target="_blank" rel="noopener noreferrer">
-                    <img src="./static/media/social icons/open sea.png" alt="Explore our OpenSea Collection" />
-                </a>
-                <a href="https://discord.gg/gDF2tu2VSm" target="_blank" rel="noopener nereferrer">
-                    <img src="../static/media/social icons/discord.png" alt="Join our Discord" />
-                </a>
-                <a href="../index.html#div-section-2" rel="noopener nereferrer">
-                    <img src="../static/media/social icons/home.png" alt="Go Back" />
-                </a>
-                <a href="https://twitter.com/OkaymonNFT" target="_blank" rel="noopener noreferrer">
-                    <img src="../static/media/social icons/twitter.png" alt="Follow us on Twitter" />
-                </a>
-            </div>
-        </div> -->
+        <div class="header" id="okaymonLogo">
+            <img style="align-items:flex-end;" src="../static/media/okaymon logo_v5 color_web.png" width="50%">
+        </div>
     </div>
-    <div class="header">
-        <img src="../static/media/okaymon logo_v5 color_web.png" width="50%">
-    </div>
-<script src="../static/js/magnify.js"></script>
+<script type="text/javascript" src="../static/js/magnify.js"></script>
+<script type="text/javascript" src="../static/js/jquery-3.6.0.min.js"></script>
+
+<script type="text/javascript">
+    //image loading "spinner"
+    $('#main-area').hide();
+    // is the main image loaded ?
+    $('#sheet-desktop').on('load', function(){
+      // hide/remove the loading image and show loaded one.
+      $('#load-img').hide();
+      $('#main-area').show();
+    });
+</script>
 <script>
     function isMobile() {
         return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
-
     if (!isMobile()) {
         window.onload = function() {
-        magnify("sheet-desktop", 3);
+            magnify("sheet-desktop", 3);
+        }
     }
-
-
-// trigger page reload after full load
-//     if(!window.location.hash) {
-//         window.location = window.location + '#loaded';
-//         window.location.reload();
-//     }
-}
+    //reload page on screen resize so magnify works//
+    window.onresize = function(){
+        location.reload(); 
+            } 
 </script>
 </body>
 </html>
+
+<!-- TODO: script hangs at first page reload and then works fine. not sure what that is. -->
