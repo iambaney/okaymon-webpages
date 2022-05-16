@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh">
+    <title>Generation 3: Fables</title>
+    <link rel="stylesheet" href="../static/css/contact_sheet_style.css">
+    <link rel="icon" type="image/x-icon" href="../static/media/favicon_okayball_purple.png">
+</head>
+<body>
+    <div class="load-img" id="load-img">
+        <p><img src="../static/media/Gen_3_Okayball_sprite_gif_v3_web.gif" height="178px" width="98px" alt=""></p>
+        <p>LOADING...</p>
+    </div>
+    <div class="main-area" id="main-area">
+        <div class="header">
+            <img id="fablesLogo" src="./media/Fables Logo_glow_web_512_webp.webp" width="30%">
+        </div>
+        <div class="page img-magnifier-container">
+            <img id="sheet-desktop" style="width: 100%; opacity:100%;" src="./media/Gen_3_Contact_Sheet_40x50_blurred_webp.webp" alt="">
+            <img id="sheet-mobile" style="width: 100%;" src="./media/Gen_3_Contact_Sheet_20x100_blurred_webp.webp" alt="">
+        </div>
+        <div class="header" id="okaymonLogo">
+            <img style="align-items:flex-end;" src="../static/media/okaymon logo_v5 color_webp.webp" width="50%">
+        </div>
+    </div>
+
+<script type="text/javascript" src="../static/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="../static/js/magnify.js"></script>
+<!-- <script type="text/javascript">
+$('#sheet-desktop').on('load', function show(){
+  $('#load-img').hide();
+  $('#main-area').show();
+});
+setTimeout(show, 3000);
+</script> -->
+
+<script>
+    $('#sheet-desktop').on('load', function(){
+        show();
+});
+    function show(){
+      $('#load-img').hide();
+    //   $('#main-area').fadeIn();
+      
+    };
+    setTimeout(show, 4000);
+</script>
+<script>
+    function isMobile() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+    if (!isMobile()) {
+        window.onload = function() {
+            magnify("sheet-desktop", 3);
+        }
+            // reload page on screen resize so magnify works//
+        window.onresize = function(){
+            location.reload(); 
+            } 
+    }
+</script>
+</body>
+</html>
+
+<!-- TODO: script hangs at first page reload and then works fine. not sure what that is. -->
