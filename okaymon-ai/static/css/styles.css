@@ -125,6 +125,72 @@ main {
     cursor: pointer;
 }
 
+.playersguide_button {
+    background: url("../media/playersguide_button_sprite_live.png") ;
+    width: 292px;
+    height: 81px;
+}
+
+.playersguide_button:hover {
+    background: url("../media/playersguide_button_sprite_live.png") ;
+    background-position: 0 -79px;
+    width: 292px;
+    height: 81 px;
+    cursor: pointer;
+}
+
+.playersguide_button:active {
+    background: url("../media/playersguide_button_sprite_live.png") ;
+    background-position: 0 -79px;
+    width: 292px;
+    height: 81 px;
+    cursor: pointer;
+}
+
+.whitepaper_button {
+    background: url("../media/whitepaper_button_sprite_soon.png") ;
+    width: 292px;
+    height: 81px;
+}
+
+.whitepaper_button:hover {
+    background: url("../media/whitepaper_button_sprite_soon.png") ;
+    background-position: 0 -79px;
+    width: 292px;
+    height: 81 px;
+    cursor: pointer;
+}
+
+.whitepaper_button:active {
+    background: url("../media/whitepaper_button_sprite_soon.png") ;
+    background-position: 0 -79px;
+    width: 292px;
+    height: 81 px;
+    cursor: pointer;
+}
+
+.faqs_button {
+    background: url("../media/faqs_button_sprite_soon.png") ;
+    width: 292px;
+    height: 81px;
+}
+
+.faqs_button:hover {
+    background: url("../media/faqs_button_sprite_soon.png") ;
+    background-position: 0 -79px;
+    width: 292px;
+    height: 81 px;
+    cursor: pointer;
+}
+
+.faqs_button:active {
+    background: url("../media/faqs_button_sprite_soon.png") ;
+    background-position: 0 -79px;
+    width: 292px;
+    height: 81 px;
+    cursor: pointer;
+}
+
 .main-section {
     width: 100%;
     display: flex;
@@ -262,10 +328,15 @@ main {
 /* ids to help align the individual logos */
 #oasisCollectionLogo{}
 #depthsCollectionLogo{padding-bottom: 1%;}
-#fablesCollectionLogo{}
-#tracesCollectionLogo{padding-bottom: 4%;}
+#fablesCollectionLogo{
+    /* filter: brightness(1.4); */
+}
+#tracesCollectionLogo{
+    padding-bottom: 4%;
+    /* filter: hue-rotate(-110deg); */
+}
 #meltdownCollectionLogo{
-    padding-bottom: 10%;
+    padding-bottom: 15%;
     margin-top: 10%;
 }
 

@@ -20,7 +20,6 @@ html {
     width: 100%;
     background-color: #5678dd;
     background-image: radial-gradient(#dddddd 25%,#2654dd);
-    /* background-image: url("../media/Poster_web\ background\ 3840x2160.jpg"); */
     background-size:cover;
     background-position-x: center;
     background-attachment: fixed;

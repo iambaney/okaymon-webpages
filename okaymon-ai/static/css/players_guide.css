@@ -28,6 +28,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* filter:contrast(90%);
+    filter:brightness(105%);
+    filter:grayscale(10%); */
 }
 .page img{
     margin: 1%;
