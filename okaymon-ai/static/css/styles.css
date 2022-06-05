@@ -326,18 +326,23 @@ main {
 }
 
 /* ids to help align the individual logos */
-#oasisCollectionLogo{}
-#depthsCollectionLogo{padding-bottom: 1%;}
+#oasisCollectionLogo{
+    padding-bottom: 1%;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+#depthsCollectionLogo{
+    padding-left: 6%;
+    padding-right: 6%
+}
 #fablesCollectionLogo{
-    /* filter: brightness(1.4); */
 }
 #tracesCollectionLogo{
-    padding-bottom: 4%;
+    padding-bottom: 3%;
     /* filter: hue-rotate(-110deg); */
 }
 #meltdownCollectionLogo{
-    padding-bottom: 15%;
-    margin-top: 10%;
+    padding-bottom: 4%;
 }
 
 /* defining marquee.*/
