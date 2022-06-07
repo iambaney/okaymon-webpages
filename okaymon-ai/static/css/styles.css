@@ -82,13 +82,13 @@ main {
 }
 
 .mint_button {
-    background: url("../media/mint_button_sprite_june6.png") ;
+    background: url("../media/mint_button_sprite_catch.png") ;
     width: 292px;
     height: 81px;
 }
 
 .mint_button:hover {
-    background: url("../media/mint_button_sprite_june6.png") ;
+    background: url("../media/mint_button_sprite_catch.png") ;
     background-position: 0 -79px;
     width: 292px;
     height: 81 px;
@@ -96,7 +96,7 @@ main {
 }
 
 .mint_button:active {
-    background: url("../media/mint_button_sprite_june6.png") ;
+    background: url("../media/mint_button_sprite_catch.png") ;
     background-position: 0 -79px;
     width: 292px;
     height: 81 px;
@@ -104,13 +104,13 @@ main {
 }
 
 .leaderboard_button {
-    background: url("../media/leaderboard_button_sprite_soon.png") ;
+    background: url("../media/leaderboard_button_sprite_live.png") ;
     width: 292px;
     height: 81px;
 }
 
 .leaderboard_button:hover {
-    background: url("../media/leaderboard_button_sprite_soon.png") ;
+    background: url("../media/leaderboard_button_sprite_live.png") ;
     background-position: 0 -79px;
     width: 292px;
     height: 81 px;
@@ -118,7 +118,7 @@ main {
 }
 
 .leaderboard_button:active {
-    background: url("../media/leaderboard_button_sprite_soon.png") ;
+    background: url("../media/leaderboard_button_sprite_live.png") ;
     background-position: 0 -79px;
     width: 292px;
     height: 81 px;
@@ -333,7 +333,8 @@ main {
 }
 #depthsCollectionLogo{
     padding-left: 6%;
-    padding-right: 6%
+    padding-right: 6%;
+    padding-bottom: 1%;
 }
 #fablesCollectionLogo{
 }
@@ -343,6 +344,27 @@ main {
 }
 #meltdownCollectionLogo{
     padding-bottom: 4%;
+}
+
+.btn-img {
+    border: none;
+    cursor:pointer;
+    background-color: transparent;
+    filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.3));
+}
+  
+.btn-img:hover{
+    opacity: 0.8;
+    position: relative;
+    transition: all 0.1s ease;
+        -webkit-transition: all 0.1s ease;
+        -moz-transition: all 0.1s ease;
+        -o-transition: all 0.1s ease;
+    transform: scale(1.04);
+        -webkit-transform: scale(1.04);
+        -ms-transform: scale(1.04);
+        -moz-transform: scale(1.04);
+        -o-transform: scale(1.04);
 }
 
 /* defining marquee.*/
@@ -716,26 +738,6 @@ main {
 
     .gen-chunk p{
         margin-top: -8%;
-    }
-    
-    .btn-img {
-        border: none;
-        cursor:pointer;
-        background-color: transparent;
-    }
-      
-    .btn-img:hover{
-        opacity: 0.8;
-        position: relative;
-        transition: all 0.1s ease;
-            -webkit-transition: all 0.1s ease;
-            -moz-transition: all 0.1s ease;
-            -o-transition: all 0.1s ease;
-        transform: scale(1.04);
-            -webkit-transform: scale(1.04);
-            -ms-transform: scale(1.04);
-            -moz-transform: scale(1.04);
-            -o-transform: scale(1.04);
     }
 
     .tab {
