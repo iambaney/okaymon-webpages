@@ -232,7 +232,8 @@ main {
 .section-header span {
     color: rgb(255, 243, 28);
     --stroke-width: 3pt;
-    --stroke-color: rgb(72, 75, 238);
+    --stroke-color:#28489d;
+    /* --stroke-color: rgb(72, 75, 238); */
     text-shadow: calc(var(--stroke-width) * 1) calc(var(--stroke-width) * 0) 0
     var(--stroke-color),
     calc(var(--stroke-width) * 0.9239) calc(var(--stroke-width) * 0.3827) 0
@@ -530,7 +531,7 @@ main {
     }
     .section-header span {
         color: rgb(255, 243, 28);
-        --stroke-width: 4pt;
+        --stroke-width: 5pt;
     }
 }
 
@@ -669,7 +670,7 @@ main {
     .section-header span {
         color: rgb(255, 243, 28);
         --stroke-width: 5pt;
-        --stroke-color: rgb(72, 75, 238);
+        --stroke-color:#28489d;
         text-shadow: calc(var(--stroke-width) * 1) calc(var(--stroke-width) * 0) 0
         var(--stroke-color),
         calc(var(--stroke-width) * 0.9239) calc(var(--stroke-width) * 0.3827) 0
