@@ -62,7 +62,7 @@ main {
 }
 
 #mobile-quicklinks{
-    margin-top:20px;
+    margin-top:-20px;
     margin-bottom:10px;
     flex-wrap: wrap;
 
@@ -72,7 +72,6 @@ main {
     width: 100%;
     background-size: cover;
     background-position: center;
-    z-index: 100;
 }
 
 #banner {
@@ -82,13 +81,13 @@ main {
 }
 
 .mint_button {
-    background: url("../media/mint_button_sprite_catch.png") ;
+    background: url("../media/mint_button_sprite_paused.png") ;
     width: 292px;
     height: 81px;
 }
 
 .mint_button:hover {
-    background: url("../media/mint_button_sprite_catch.png") ;
+    background: url("../media/mint_button_sprite_paused.png") ;
     background-position: 0 -79px;
     width: 292px;
     height: 81 px;
@@ -96,7 +95,7 @@ main {
 }
 
 .mint_button:active {
-    background: url("../media/mint_button_sprite_catch.png") ;
+    background: url("../media/mint_button_sprite_paused.png") ;
     background-position: 0 -79px;
     width: 292px;
     height: 81 px;
@@ -280,6 +279,13 @@ main {
     text-align: center;
     border-radius: 25px;
     border: 1px solid black;
+}
+
+#section-zero{
+    padding: 0px 0 15px 0;
+    margin: 20px 0 -10px 0px;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .section-header img {
