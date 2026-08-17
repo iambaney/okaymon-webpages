@@ -103,13 +103,13 @@ main {
 }
 
 .leaderboard_button {
-    background: url("../media/leaderboard_button_sprite_live.png") ;
+    background: url("../media/leaderboard_button_sprite_soon.png") ;
     width: 292px;
     height: 81px;
 }
 
 .leaderboard_button:hover {
-    background: url("../media/leaderboard_button_sprite_live.png") ;
+    background: url("../media/leaderboard_button_sprite_soon.png") ;
     background-position: 0 -79px;
     width: 292px;
     height: 81 px;
@@ -117,7 +117,7 @@ main {
 }
 
 .leaderboard_button:active {
-    background: url("../media/leaderboard_button_sprite_live.png") ;
+    background: url("../media/leaderboard_button_sprite_soon.png") ;
     background-position: 0 -79px;
     width: 292px;
     height: 81 px;
