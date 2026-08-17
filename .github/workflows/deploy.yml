@@ -1,0 +1,51 @@
+# Deploys the archived site to iambaney.zip/okaymon.
+#
+# All hosting infrastructure lives in the iambaney.zip repo
+# (infrastructure/modules/okaymon): a private S3 bucket behind the portfolio's
+# CloudFront distribution, with a /okaymon* cache behavior routing to it. This
+# workflow is the repo's entire deployment surface — it assumes a role scoped
+# to exactly the archive bucket plus cache invalidation, via GitHub's OIDC
+# provider.
+#
+# One-time setup after `terraform apply` over there (values from its outputs):
+#   gh variable set AWS_DEPLOY_ROLE_ARN --body <okaymon_deploy_role_arn>
+#   gh variable set ARCHIVE_BUCKET      --body <okaymon_archive_bucket>
+#   gh variable set DISTRIBUTION_ID     --body <distribution_id>
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  id-token: write # OIDC federation
+  contents: read
+
+concurrency: deploy
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_DEPLOY_ROLE_ARN }}
+          aws-region: us-west-2
+
+      # Objects live under an okaymon/ prefix so viewer URIs map 1:1 to S3
+      # keys. Excluded: an unreferenced font-download zip and an empty JS file
+      # (see PLAN.md Phase 3) — everything else ships byte-for-byte.
+      - name: Sync site to S3
+        run: >
+          aws s3 sync okaymon-ai/ "s3://${{ vars.ARCHIVE_BUCKET }}/okaymon/"
+          --delete
+          --exclude "static/fonts/Pixelate/pixelate/pixellocale-v-1-4.zip"
+          --exclude "static/js/loading.js"
+
+      - name: Invalidate CloudFront cache
+        run: >
+          aws cloudfront create-invalidation
+          --distribution-id "${{ vars.DISTRIBUTION_ID }}"
+          --paths "/okaymon*"

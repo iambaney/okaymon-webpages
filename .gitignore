@@ -1,5 +1,8 @@
 # Drive sync files
 **/desktop.ini
 
+# claude configs
+.claude/
+
 # Deprecated Files
 **/archive/**
